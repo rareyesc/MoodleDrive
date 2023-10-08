@@ -1,0 +1,73 @@
+
+:root {
+    --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+html {
+    font-family: sans-serif !important;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    margin: 0;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.chart-area {
+    position: relative;
+    height: 10rem;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .chart-area {
+        height: 20rem
+    }
+}
+
+.chart-bar {
+    position: relative;
+    height: 10rem;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .chart-bar {
+        height: 20rem
+    }
+}
+
+.chart-pie {
+    position: relative;
+    height: 15rem;
+    width: 100%
+}
+
+@media (min-width:768px) {
+    .chart-pie {
+        height: calc(20rem - 43px) !important
+    }
+}
+
+.bg-login-image {
+    background: url(/images/SanMateo_Login.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.bg-register-image {
+    background: url(/images/SanMateo_Register.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.bg-password-image {
+    background: url(/images/SanMateo_FPass.jpg);
+    background-position: center;
+    background-size: cover
+}

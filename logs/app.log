@@ -1,0 +1,536 @@
+2023-10-07T00:02:31.817-05:00  INFO 13280 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 13280 (started by rarey in D:\MoodleDrive)
+2023-10-07T00:02:31.825-05:00  INFO 13280 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:02:32.659-05:00  INFO 13280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:02:32.726-05:00  INFO 13280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:02:33.148-05:00  INFO 13280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:02:33.622-05:00  INFO 13280 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42e4e589
+2023-10-07T00:02:33.625-05:00  INFO 13280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:02:33.744-05:00  INFO 13280 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:02:33.848-05:00  INFO 13280 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:02:33.852-05:00  INFO 13280 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:02:34.080-05:00  INFO 13280 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:02:34.254-05:00  INFO 13280 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:02:34.603-05:00  INFO 13280 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:02:35.248-05:00  INFO 13280 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:02:35.251-05:00  INFO 13280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:02:35.704-05:00  WARN 13280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-07T00:02:36.269-05:00  INFO 13280 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.763 seconds (process running for 5.808)
+2023-10-07T00:02:36.271-05:00  INFO 13280 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:02:36.855-05:00  INFO 13280 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:02:36.857-05:00  INFO 13280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T00:02:36.867-05:00  INFO 13280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T00:06:30.913-05:00  INFO 1352 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 1352 (started by rarey in D:\MoodleDrive)
+2023-10-07T00:06:30.915-05:00  INFO 1352 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:06:31.744-05:00  INFO 1352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:06:31.807-05:00  INFO 1352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:06:32.216-05:00  INFO 1352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:06:32.679-05:00  INFO 1352 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@594131f2
+2023-10-07T00:06:32.682-05:00  INFO 1352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:06:32.814-05:00  INFO 1352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:06:32.920-05:00  INFO 1352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:06:32.923-05:00  INFO 1352 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:06:33.144-05:00  INFO 1352 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:06:33.334-05:00  INFO 1352 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:06:33.659-05:00  INFO 1352 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:06:34.470-05:00  INFO 1352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:06:34.474-05:00  INFO 1352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:06:35.465-05:00  INFO 1352 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.861 seconds (process running for 5.938)
+2023-10-07T00:06:35.467-05:00  INFO 1352 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:06:36.148-05:00  INFO 1352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:06:36.155-05:00  INFO 1352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T00:06:36.176-05:00  INFO 1352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T00:20:35.517-05:00  INFO 19088 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 19088 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T00:20:35.519-05:00  INFO 19088 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:20:36.074-05:00  INFO 19088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:20:36.123-05:00  INFO 19088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:20:36.572-05:00  INFO 19088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T00:20:36.581-05:00  INFO 19088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T00:20:36.582-05:00  INFO 19088 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T00:20:36.676-05:00  INFO 19088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T00:20:36.677-05:00  INFO 19088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1118 ms
+2023-10-07T00:20:36.768-05:00  INFO 19088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:20:37.049-05:00  INFO 19088 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@cde8c6c
+2023-10-07T00:20:37.051-05:00  INFO 19088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:20:37.123-05:00  INFO 19088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:20:37.171-05:00  INFO 19088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:20:37.173-05:00  INFO 19088 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:20:37.316-05:00  INFO 19088 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:20:37.446-05:00  INFO 19088 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:20:37.686-05:00  INFO 19088 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:20:38.234-05:00  INFO 19088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:20:38.237-05:00  INFO 19088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:20:38.843-05:00  INFO 19088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T00:20:38.850-05:00  INFO 19088 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.697 seconds (process running for 4.073)
+2023-10-07T00:20:38.852-05:00  INFO 19088 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:21:55.292-05:00  INFO 19088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T00:21:55.293-05:00  INFO 19088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T00:21:55.294-05:00  INFO 19088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T00:26:35.755-05:00  INFO 16136 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 16136 (started by rarey in D:\MoodleDrive)
+2023-10-07T00:26:35.758-05:00  INFO 16136 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:26:36.573-05:00  INFO 16136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:26:36.645-05:00  INFO 16136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:26:37.121-05:00  INFO 16136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:26:37.600-05:00  INFO 16136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d54d0f5
+2023-10-07T00:26:37.604-05:00  INFO 16136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:26:37.753-05:00  INFO 16136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:26:37.876-05:00  INFO 16136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:26:37.881-05:00  INFO 16136 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:26:38.170-05:00  INFO 16136 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:26:38.374-05:00  INFO 16136 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:26:38.716-05:00  INFO 16136 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:26:39.310-05:00  INFO 16136 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:26:39.314-05:00  INFO 16136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:26:40.340-05:00  INFO 16136 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.894 seconds (process running for 5.894)
+2023-10-07T00:26:40.342-05:00  INFO 16136 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:26:40.912-05:00  INFO 16136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:26:40.915-05:00  INFO 16136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T00:26:40.926-05:00  INFO 16136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T00:27:01.764-05:00  INFO 17548 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 17548 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T00:27:01.766-05:00  INFO 17548 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:27:02.320-05:00  INFO 17548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:27:02.372-05:00  INFO 17548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:27:02.828-05:00  INFO 17548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T00:27:02.837-05:00  INFO 17548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T00:27:02.838-05:00  INFO 17548 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T00:27:02.940-05:00  INFO 17548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T00:27:02.940-05:00  INFO 17548 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1129 ms
+2023-10-07T00:27:03.034-05:00  INFO 17548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:27:03.331-05:00  INFO 17548 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f42e06e
+2023-10-07T00:27:03.333-05:00  INFO 17548 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:27:03.406-05:00  INFO 17548 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:27:03.454-05:00  INFO 17548 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:27:03.455-05:00  INFO 17548 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:27:03.592-05:00  INFO 17548 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:27:03.714-05:00  INFO 17548 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:27:03.920-05:00  INFO 17548 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:27:04.434-05:00  INFO 17548 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:27:04.437-05:00  INFO 17548 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:27:05.008-05:00  INFO 17548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T00:27:05.016-05:00  INFO 17548 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.594 seconds (process running for 3.965)
+2023-10-07T00:27:05.018-05:00  INFO 17548 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:27:35.918-05:00  INFO 17548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T00:27:35.918-05:00  INFO 17548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T00:27:35.919-05:00  INFO 17548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T00:31:30.542-05:00  INFO 17940 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 17940 (started by rarey in D:\MoodleDrive)
+2023-10-07T00:31:30.544-05:00  INFO 17940 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:31:31.327-05:00  INFO 17940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:31:31.399-05:00  INFO 17940 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:31:31.842-05:00  INFO 17940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:31:32.374-05:00  INFO 17940 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d54d0f5
+2023-10-07T00:31:32.377-05:00  INFO 17940 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:31:32.504-05:00  INFO 17940 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:31:32.620-05:00  INFO 17940 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:31:32.623-05:00  INFO 17940 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:31:32.846-05:00  INFO 17940 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:31:33.022-05:00  INFO 17940 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:31:33.368-05:00  INFO 17940 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:31:34.043-05:00  INFO 17940 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:31:34.047-05:00  INFO 17940 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:31:35.089-05:00  INFO 17940 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.859 seconds (process running for 5.874)
+2023-10-07T00:31:35.093-05:00  INFO 17940 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:31:35.719-05:00  INFO 17940 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:31:35.723-05:00  INFO 17940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T00:31:35.732-05:00  INFO 17940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T00:33:01.264-05:00  INFO 5696 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 5696 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T00:33:01.267-05:00  INFO 5696 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:33:01.933-05:00  INFO 5696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:33:01.982-05:00  INFO 5696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:33:02.446-05:00  INFO 5696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T00:33:02.455-05:00  INFO 5696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T00:33:02.456-05:00  INFO 5696 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T00:33:02.550-05:00  INFO 5696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T00:33:02.551-05:00  INFO 5696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1232 ms
+2023-10-07T00:33:02.643-05:00  INFO 5696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:33:02.920-05:00  INFO 5696 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310b2b6f
+2023-10-07T00:33:02.922-05:00  INFO 5696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:33:02.993-05:00  INFO 5696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:33:03.040-05:00  INFO 5696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:33:03.042-05:00  INFO 5696 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:33:03.182-05:00  INFO 5696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:33:03.305-05:00  INFO 5696 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:33:03.516-05:00  INFO 5696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:33:04.088-05:00  INFO 5696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:33:04.091-05:00  INFO 5696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:33:04.656-05:00  INFO 5696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T00:33:04.663-05:00  INFO 5696 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.771 seconds (process running for 4.091)
+2023-10-07T00:33:04.665-05:00  INFO 5696 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:33:34.252-05:00  INFO 5696 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T00:33:34.252-05:00  INFO 5696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T00:33:34.253-05:00  INFO 5696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T00:35:48.859-05:00  INFO 5628 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 5628 (started by rarey in D:\MoodleDrive)
+2023-10-07T00:35:48.862-05:00  INFO 5628 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:35:49.784-05:00  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:35:49.866-05:00  INFO 5628 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:35:50.435-05:00  INFO 5628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:35:50.994-05:00  INFO 5628 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52bd9a27
+2023-10-07T00:35:50.997-05:00  INFO 5628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:35:51.129-05:00  INFO 5628 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:35:51.248-05:00  INFO 5628 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:35:51.251-05:00  INFO 5628 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:35:51.472-05:00  INFO 5628 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:35:51.638-05:00  INFO 5628 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:35:51.970-05:00  INFO 5628 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:35:52.615-05:00  INFO 5628 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:35:52.618-05:00  INFO 5628 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:35:53.672-05:00  INFO 5628 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.146 seconds (process running for 6.194)
+2023-10-07T00:35:53.676-05:00  INFO 5628 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:35:54.305-05:00  INFO 5628 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:35:54.308-05:00  INFO 5628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T00:35:54.319-05:00  INFO 5628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T00:36:02.449-05:00  INFO 2536 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 2536 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T00:36:02.452-05:00  INFO 2536 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T00:36:03.003-05:00  INFO 2536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T00:36:03.053-05:00  INFO 2536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-10-07T00:36:03.515-05:00  INFO 2536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T00:36:03.526-05:00  INFO 2536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T00:36:03.527-05:00  INFO 2536 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T00:36:03.628-05:00  INFO 2536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T00:36:03.628-05:00  INFO 2536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1133 ms
+2023-10-07T00:36:03.720-05:00  INFO 2536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T00:36:04.007-05:00  INFO 2536 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6909f6be
+2023-10-07T00:36:04.010-05:00  INFO 2536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T00:36:04.088-05:00  INFO 2536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T00:36:04.136-05:00  INFO 2536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T00:36:04.139-05:00  INFO 2536 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T00:36:04.282-05:00  INFO 2536 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:36:04.415-05:00  INFO 2536 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T00:36:04.626-05:00  INFO 2536 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T00:36:05.141-05:00  INFO 2536 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T00:36:05.144-05:00  INFO 2536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T00:36:05.714-05:00  INFO 2536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T00:36:05.722-05:00  INFO 2536 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.629 seconds (process running for 3.945)
+2023-10-07T00:36:05.724-05:00  INFO 2536 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T00:37:22.922-05:00  INFO 2536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T00:37:22.923-05:00  INFO 2536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T00:37:22.924-05:00  INFO 2536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T01:33:04.101-05:00  INFO 144 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 144 (started by rarey in D:\MoodleDrive)
+2023-10-07T01:33:04.103-05:00  INFO 144 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T01:33:05.009-05:00  INFO 144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T01:33:05.079-05:00  INFO 144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-10-07T01:33:05.508-05:00  INFO 144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T01:33:05.992-05:00  INFO 144 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52bd9a27
+2023-10-07T01:33:05.994-05:00  INFO 144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T01:33:06.116-05:00  INFO 144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T01:33:06.214-05:00  INFO 144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T01:33:06.217-05:00  INFO 144 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T01:33:06.423-05:00  INFO 144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T01:33:06.587-05:00  INFO 144 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T01:33:06.915-05:00  INFO 144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T01:33:07.576-05:00  INFO 144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T01:33:07.580-05:00  INFO 144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T01:33:08.595-05:00  INFO 144 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.798 seconds (process running for 5.822)
+2023-10-07T01:33:08.598-05:00  INFO 144 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T01:33:09.330-05:00  INFO 144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T01:33:09.334-05:00  INFO 144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T01:33:09.346-05:00  INFO 144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T12:40:10.290-05:00  INFO 11924 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 11924 (started by rarey in D:\MoodleDrive)
+2023-10-07T12:40:10.292-05:00  INFO 11924 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T12:40:11.197-05:00  INFO 11924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T12:40:11.270-05:00  INFO 11924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-10-07T12:40:11.722-05:00  INFO 11924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T12:40:12.274-05:00  INFO 11924 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32256e68
+2023-10-07T12:40:12.276-05:00  INFO 11924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T12:40:12.439-05:00  INFO 11924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T12:40:12.566-05:00  INFO 11924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T12:40:12.570-05:00  INFO 11924 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T12:40:12.811-05:00  INFO 11924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:40:13.009-05:00  INFO 11924 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T12:40:13.422-05:00  INFO 11924 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:40:14.142-05:00  INFO 11924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T12:40:14.146-05:00  INFO 11924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T12:40:15.218-05:00  INFO 11924 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.261 seconds (process running for 6.429)
+2023-10-07T12:40:15.221-05:00  INFO 11924 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T12:40:15.827-05:00  INFO 11924 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T12:40:15.831-05:00  INFO 11924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T12:40:15.840-05:00  INFO 11924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T12:48:14.016-05:00  INFO 7988 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 7988 (started by rarey in D:\MoodleDrive)
+2023-10-07T12:48:14.018-05:00  INFO 7988 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T12:48:14.803-05:00  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T12:48:14.871-05:00  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-10-07T12:48:15.289-05:00  INFO 7988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T12:48:15.739-05:00  INFO 7988 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46320c9a
+2023-10-07T12:48:15.742-05:00  INFO 7988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T12:48:15.872-05:00  INFO 7988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T12:48:15.958-05:00  INFO 7988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T12:48:15.962-05:00  INFO 7988 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T12:48:16.167-05:00  INFO 7988 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:48:16.353-05:00  INFO 7988 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T12:48:16.703-05:00  INFO 7988 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:48:17.337-05:00  INFO 7988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T12:48:17.341-05:00  INFO 7988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T12:48:18.325-05:00  INFO 7988 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.624 seconds (process running for 5.674)
+2023-10-07T12:48:18.328-05:00  INFO 7988 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T12:48:18.928-05:00  INFO 7988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T12:48:18.931-05:00  INFO 7988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T12:48:18.940-05:00  INFO 7988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T12:48:49.068-05:00  INFO 15460 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 15460 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T12:48:49.070-05:00  INFO 15460 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T12:48:49.637-05:00  INFO 15460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T12:48:49.686-05:00  INFO 15460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-07T12:48:50.150-05:00  INFO 15460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T12:48:50.160-05:00  INFO 15460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T12:48:50.160-05:00  INFO 15460 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T12:48:50.265-05:00  INFO 15460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T12:48:50.265-05:00  INFO 15460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
+2023-10-07T12:48:50.356-05:00  INFO 15460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T12:48:50.648-05:00  INFO 15460 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e900e1a
+2023-10-07T12:48:50.650-05:00  INFO 15460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T12:48:50.716-05:00  INFO 15460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T12:48:50.762-05:00  INFO 15460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T12:48:50.765-05:00  INFO 15460 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T12:48:50.910-05:00  INFO 15460 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:48:51.038-05:00  INFO 15460 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T12:48:51.272-05:00  INFO 15460 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T12:48:51.858-05:00  INFO 15460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T12:48:51.861-05:00  INFO 15460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T12:48:52.470-05:00  INFO 15460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T12:48:52.478-05:00  INFO 15460 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.773 seconds (process running for 4.252)
+2023-10-07T12:48:52.480-05:00  INFO 15460 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T12:49:00.198-05:00  INFO 15460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T12:49:00.198-05:00  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T12:49:00.199-05:00  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T13:23:42.699-05:00  INFO 16972 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 16972 (started by rarey in D:\MoodleDrive)
+2023-10-07T13:23:42.701-05:00  INFO 16972 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T13:23:43.502-05:00  INFO 16972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T13:23:43.577-05:00  INFO 16972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-10-07T13:23:44.023-05:00  INFO 16972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T13:23:44.482-05:00  INFO 16972 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7af0affa
+2023-10-07T13:23:44.484-05:00  INFO 16972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T13:23:44.609-05:00  INFO 16972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T13:23:44.729-05:00  INFO 16972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T13:23:44.733-05:00  INFO 16972 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T13:23:44.950-05:00  INFO 16972 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:23:45.134-05:00  INFO 16972 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T13:23:45.520-05:00  INFO 16972 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:23:46.196-05:00  INFO 16972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T13:23:46.200-05:00  INFO 16972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:23:47.167-05:00  INFO 16972 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.79 seconds (process running for 5.822)
+2023-10-07T13:23:47.170-05:00  INFO 16972 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T13:23:47.731-05:00  INFO 16972 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:23:47.734-05:00  INFO 16972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T13:23:47.746-05:00  INFO 16972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T13:26:44.637-05:00  INFO 4540 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 4540 (started by rarey in D:\MoodleDrive)
+2023-10-07T13:26:44.640-05:00  INFO 4540 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T13:26:45.558-05:00  INFO 4540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T13:26:45.635-05:00  INFO 4540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2023-10-07T13:26:46.236-05:00  INFO 4540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T13:26:46.714-05:00  INFO 4540 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b251fb9
+2023-10-07T13:26:46.717-05:00  INFO 4540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T13:26:46.878-05:00  INFO 4540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T13:26:46.972-05:00  INFO 4540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T13:26:46.977-05:00  INFO 4540 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T13:26:47.202-05:00  INFO 4540 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:26:47.388-05:00  INFO 4540 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T13:26:47.929-05:00  INFO 4540 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:26:49.225-05:00  INFO 4540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T13:26:49.230-05:00  INFO 4540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:26:50.896-05:00  INFO 4540 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 6.641 seconds (process running for 7.732)
+2023-10-07T13:26:50.900-05:00  INFO 4540 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T13:26:52.168-05:00  INFO 4540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:26:52.172-05:00  INFO 4540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T13:26:52.190-05:00  INFO 4540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T13:51:48.178-05:00  INFO 17368 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 17368 (started by rarey in D:\MoodleDrive)
+2023-10-07T13:51:48.179-05:00  INFO 17368 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T13:51:49.011-05:00  INFO 17368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T13:51:49.087-05:00  INFO 17368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2023-10-07T13:51:49.525-05:00  INFO 17368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T13:51:50.030-05:00  INFO 17368 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d0cc83e
+2023-10-07T13:51:50.033-05:00  INFO 17368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T13:51:50.174-05:00  INFO 17368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T13:51:50.256-05:00  INFO 17368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T13:51:50.259-05:00  INFO 17368 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T13:51:50.516-05:00  INFO 17368 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:51:50.719-05:00  INFO 17368 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T13:51:51.124-05:00  INFO 17368 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T13:51:51.970-05:00  INFO 17368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T13:51:51.973-05:00  INFO 17368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:51:53.483-05:00  INFO 17368 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.657 seconds (process running for 6.809)
+2023-10-07T13:51:53.487-05:00  INFO 17368 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T13:51:54.056-05:00  INFO 17368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T13:51:54.060-05:00  INFO 17368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T13:51:54.072-05:00  INFO 17368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T14:11:05.073-05:00  INFO 6616 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 6616 (started by rarey in D:\MoodleDrive)
+2023-10-07T14:11:05.075-05:00  INFO 6616 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T14:11:05.857-05:00  INFO 6616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T14:11:05.938-05:00  INFO 6616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2023-10-07T14:11:06.374-05:00  INFO 6616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T14:11:06.800-05:00  INFO 6616 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d0cc83e
+2023-10-07T14:11:06.803-05:00  INFO 6616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T14:11:06.939-05:00  INFO 6616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T14:11:07.032-05:00  INFO 6616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T14:11:07.036-05:00  INFO 6616 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T14:11:07.234-05:00  INFO 6616 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:11:07.419-05:00  INFO 6616 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T14:11:07.779-05:00  INFO 6616 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:11:08.465-05:00  INFO 6616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T14:11:08.469-05:00  INFO 6616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T14:11:09.625-05:00  INFO 6616 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.863 seconds (process running for 5.904)
+2023-10-07T14:11:09.628-05:00  INFO 6616 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T14:11:10.196-05:00  INFO 6616 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T14:11:10.199-05:00  INFO 6616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T14:11:10.209-05:00  INFO 6616 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T14:25:00.100-05:00  INFO 5984 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 5984 (started by rarey in D:\MoodleDrive)
+2023-10-07T14:25:00.102-05:00  INFO 5984 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T14:25:00.912-05:00  INFO 5984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T14:25:00.989-05:00  INFO 5984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2023-10-07T14:25:01.449-05:00  INFO 5984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T14:25:01.918-05:00  INFO 5984 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59d0cdb6
+2023-10-07T14:25:01.920-05:00  INFO 5984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T14:25:02.041-05:00  INFO 5984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T14:25:02.132-05:00  INFO 5984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T14:25:02.136-05:00  INFO 5984 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T14:25:02.396-05:00  INFO 5984 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:25:02.588-05:00  INFO 5984 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T14:25:02.936-05:00  INFO 5984 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:25:03.712-05:00  INFO 5984 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T14:25:03.716-05:00  INFO 5984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T14:25:04.838-05:00  INFO 5984 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.053 seconds (process running for 6.086)
+2023-10-07T14:25:04.841-05:00  INFO 5984 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T14:25:05.382-05:00  INFO 5984 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T14:25:05.386-05:00  INFO 5984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T14:25:05.397-05:00  INFO 5984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T14:25:43.117-05:00  INFO 11692 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 11692 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T14:25:43.120-05:00  INFO 11692 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T14:25:43.682-05:00  INFO 11692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T14:25:43.745-05:00  INFO 11692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+2023-10-07T14:25:44.215-05:00  INFO 11692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T14:25:44.224-05:00  INFO 11692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T14:25:44.224-05:00  INFO 11692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T14:25:44.324-05:00  INFO 11692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T14:25:44.325-05:00  INFO 11692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2023-10-07T14:25:44.417-05:00  INFO 11692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T14:25:44.687-05:00  INFO 11692 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a50b32d
+2023-10-07T14:25:44.689-05:00  INFO 11692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T14:25:44.760-05:00  INFO 11692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T14:25:44.806-05:00  INFO 11692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T14:25:44.808-05:00  INFO 11692 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T14:25:44.951-05:00  INFO 11692 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:25:45.080-05:00  INFO 11692 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T14:25:45.317-05:00  INFO 11692 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T14:25:45.894-05:00  INFO 11692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T14:25:45.897-05:00  INFO 11692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T14:25:46.587-05:00  INFO 11692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T14:25:46.596-05:00  INFO 11692 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.838 seconds (process running for 4.179)
+2023-10-07T14:25:46.598-05:00  INFO 11692 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T14:26:00.565-05:00  INFO 11692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T14:26:00.565-05:00  INFO 11692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T14:26:00.566-05:00  INFO 11692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T15:52:21.534-05:00  INFO 5048 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 5048 (started by rarey in D:\MoodleDrive)
+2023-10-07T15:52:21.535-05:00  INFO 5048 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T15:52:22.340-05:00  INFO 5048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T15:52:22.418-05:00  INFO 5048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2023-10-07T15:52:22.849-05:00  INFO 5048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T15:52:23.292-05:00  INFO 5048 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1df5c7e3
+2023-10-07T15:52:23.294-05:00  INFO 5048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T15:52:23.416-05:00  INFO 5048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T15:52:23.507-05:00  INFO 5048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T15:52:23.511-05:00  INFO 5048 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T15:52:23.747-05:00  INFO 5048 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:52:23.940-05:00  INFO 5048 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T15:52:24.340-05:00  INFO 5048 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:52:25.088-05:00  INFO 5048 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T15:52:25.092-05:00  INFO 5048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:52:26.227-05:00  INFO 5048 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.018 seconds (process running for 6.071)
+2023-10-07T15:52:26.229-05:00  INFO 5048 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T15:52:26.892-05:00  INFO 5048 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:52:26.896-05:00  INFO 5048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T15:52:26.909-05:00  INFO 5048 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T15:52:53.607-05:00  INFO 7048 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 7048 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T15:52:53.611-05:00  INFO 7048 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T15:52:54.199-05:00  INFO 7048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T15:52:54.263-05:00  INFO 7048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2023-10-07T15:52:54.747-05:00  INFO 7048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T15:52:54.757-05:00  INFO 7048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T15:52:54.757-05:00  INFO 7048 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T15:52:54.860-05:00  INFO 7048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T15:52:54.861-05:00  INFO 7048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
+2023-10-07T15:52:54.952-05:00  INFO 7048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T15:52:55.231-05:00  INFO 7048 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72b0a004
+2023-10-07T15:52:55.233-05:00  INFO 7048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T15:52:55.304-05:00  INFO 7048 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T15:52:55.352-05:00  INFO 7048 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T15:52:55.355-05:00  INFO 7048 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T15:52:55.498-05:00  INFO 7048 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:52:55.626-05:00  INFO 7048 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T15:52:55.871-05:00  INFO 7048 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:52:56.462-05:00  INFO 7048 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T15:52:56.465-05:00  INFO 7048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:52:57.147-05:00  INFO 7048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T15:52:57.156-05:00  INFO 7048 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.927 seconds (process running for 4.271)
+2023-10-07T15:52:57.158-05:00  INFO 7048 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T15:53:00.735-05:00  INFO 7048 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T15:53:00.736-05:00  INFO 7048 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T15:53:00.737-05:00  INFO 7048 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T15:58:11.166-05:00  INFO 16356 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 16356 (started by rarey in D:\MoodleDrive)
+2023-10-07T15:58:11.168-05:00  INFO 16356 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T15:58:11.987-05:00  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T15:58:12.064-05:00  INFO 16356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2023-10-07T15:58:12.493-05:00  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T15:58:12.985-05:00  INFO 16356 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1df5c7e3
+2023-10-07T15:58:12.988-05:00  INFO 16356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T15:58:13.105-05:00  INFO 16356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T15:58:13.201-05:00  INFO 16356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T15:58:13.204-05:00  INFO 16356 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T15:58:13.394-05:00  INFO 16356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:58:13.577-05:00  INFO 16356 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T15:58:13.943-05:00  INFO 16356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:58:14.634-05:00  INFO 16356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T15:58:14.639-05:00  INFO 16356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:58:15.802-05:00  INFO 16356 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 4.943 seconds (process running for 5.969)
+2023-10-07T15:58:15.806-05:00  INFO 16356 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T15:58:16.410-05:00  INFO 16356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:58:16.413-05:00  INFO 16356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T15:58:16.425-05:00  INFO 16356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-07T15:58:37.242-05:00  INFO 6552 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 6552 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-07T15:58:37.244-05:00  INFO 6552 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T15:58:37.819-05:00  INFO 6552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T15:58:37.881-05:00  INFO 6552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
+2023-10-07T15:58:38.346-05:00  INFO 6552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-07T15:58:38.356-05:00  INFO 6552 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-07T15:58:38.356-05:00  INFO 6552 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-07T15:58:38.458-05:00  INFO 6552 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-07T15:58:38.458-05:00  INFO 6552 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+2023-10-07T15:58:38.546-05:00  INFO 6552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T15:58:38.823-05:00  INFO 6552 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64502326
+2023-10-07T15:58:38.825-05:00  INFO 6552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T15:58:38.894-05:00  INFO 6552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T15:58:38.938-05:00  INFO 6552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T15:58:38.940-05:00  INFO 6552 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T15:58:39.083-05:00  INFO 6552 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:58:39.207-05:00  INFO 6552 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T15:58:39.446-05:00  INFO 6552 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:58:40.055-05:00  INFO 6552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T15:58:40.058-05:00  INFO 6552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:58:40.732-05:00  INFO 6552 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-07T15:58:40.740-05:00  INFO 6552 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 3.851 seconds (process running for 4.201)
+2023-10-07T15:58:40.742-05:00  INFO 6552 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T15:58:48.733-05:00  INFO 6552 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07T15:58:48.733-05:00  INFO 6552 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T15:58:48.735-05:00  INFO 6552 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T20:44:52.377-05:00  INFO 14432 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 14432 (started by rarey in D:\MoodleDrive)
+2023-10-07T20:44:52.380-05:00  INFO 14432 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T20:44:53.369-05:00  INFO 14432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T20:44:53.462-05:00  INFO 14432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2023-10-07T20:44:54.007-05:00  INFO 14432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T20:44:54.521-05:00  INFO 14432 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34c53688
+2023-10-07T20:44:54.524-05:00  INFO 14432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T20:44:54.660-05:00  INFO 14432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T20:44:54.745-05:00  INFO 14432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-07T20:44:54.748-05:00  INFO 14432 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T20:44:54.978-05:00  INFO 14432 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:44:55.184-05:00  INFO 14432 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T20:44:55.626-05:00  INFO 14432 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T20:44:56.364-05:00  INFO 14432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T20:44:56.368-05:00  INFO 14432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:44:57.683-05:00  WARN 14432 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c8f8b542-8522-4bb7-9f1a-ce95b821de03
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-07T20:44:57.878-05:00  INFO 14432 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34dda1b4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@193d73d3, org.springframework.security.web.context.SecurityContextHolderFilter@7afac89a, org.springframework.security.web.header.HeaderWriterFilter@75ff2b6d, org.springframework.security.web.csrf.CsrfFilter@467e7793, org.springframework.security.web.authentication.logout.LogoutFilter@1267f832, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3f473daf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1de6f29d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5cb4ba80, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3c4231e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@276eafad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30bd6bc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@978475b, org.springframework.security.web.access.ExceptionTranslationFilter@129b0ed, org.springframework.security.web.access.intercept.AuthorizationFilter@52a23575]
+2023-10-07T20:44:57.939-05:00  INFO 14432 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 5.936 seconds (process running for 7.117)
+2023-10-07T20:44:57.943-05:00  INFO 14432 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-07T20:44:58.621-05:00  INFO 14432 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T20:44:58.624-05:00  INFO 14432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-07T20:44:58.637-05:00  INFO 14432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
