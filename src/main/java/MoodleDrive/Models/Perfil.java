@@ -9,47 +9,54 @@ public class Perfil {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idPerfil")
+    @Column(name = "id_perfil")
     private int idPerfil;
 
     @ManyToOne
-    @JoinColumn(name = "idAuth", nullable = false)
+    @JoinColumn(name = "id_auth", nullable = false)
     private Autenticacion autenticacion;
 
+    @NotNull(message = "El numero de documento no puede estar vacío")
     @NotBlank
-    @Column(name = "nDocumento", nullable = false, unique = true)
+    @Column(name = "n_documento", nullable = false, unique = true)
     private String nDocumento;
 
+    @NotNull(message = "El tipo de documento no puede estar vacío")
     @ManyToOne
     @JoinColumn(name = "t_documento", nullable = false)
     private Tdocumento tDocumento;
 
+    @NotNull(message = "El primer nombre no puede estar vacío")
     @NotBlank
-    @Column(name = "pNombre", nullable = false)
+    @Column(name = "p_nombre", nullable = false)
     private String pNombre;
 
-    @Column(name = "sNombre")
+    @Column(name = "s_nombre")
     private String sNombre;
 
+    @NotNull(message = "El primer apellido no puede estar vacío")
     @NotBlank
-    @Column(name = "pApellido", nullable = false)
+    @Column(name = "p_apellido", nullable = false)
     private String pApellido;
 
-    @Column(name = "sApellido")
+    @Column(name = "s_apellido")
     private String sApellido;
 
+    @NotNull(message = "El dia de nacimiento no puede estar vacío")
     @Min(1)
     @Max(31)
-    @Column(name = "dNacimiento", nullable = false)
+    @Column(name = "d_nacimiento", nullable = false)
     private int dNacimiento;
 
+    @NotNull(message = "El mes de nacimiento no puede estar vacío")
     @Min(1)
     @Max(12)
-    @Column(name = "mNacimiento", nullable = false)
+    @Column(name = "m_nacimiento", nullable = false)
     private int mNacimiento;
 
+    @NotNull(message = "El año de nacimiento no puede estar vacío")
     @Min(1950)
-    @Column(name = "aNacimiento", nullable = false)
+    @Column(name = "a_nacimiento", nullable = false)
     private int aNacimiento;
 
     /**

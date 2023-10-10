@@ -42,14 +42,14 @@
                                 <!-- CONTENEDOR DE NUMERO DE DOCUMENTO -->
                                 <div class="col-sm-6 mb-sm-0">
                                     <!-- INPUT DE NUMERO DE DOCUMENTO -->
-                                    <input type="number" class="form-control form-control-user" id="txtnDoc" placeholder="N° Documento *" name="txtnDoc" required min="10000"/>
+                                    <input type="number" class="form-control form-control-user" id="txtnDoc" placeholder="N° Documento *" name="nDocumento" required min="10000"/>
                                     <!-- FIN INPUT DE NUMERO DE DOCUMENTO -->
                                 </div>
                                 <!-- FIN CONTENEDOR DE NUMERO DE DOCUMENTO -->
                                 <!-- CONTENEDOR DE TIPO DE DOCUMENTO -->
                                 <div class="col-sm-6">
                                     <!-- SELECT DE TIPO DE DOCUMENTO -->
-                                    <select class="form-select rounded-select" id="txtTDoc" name="txtTDoc" required>
+                                    <select class="form-select rounded-select" id="txtTDoc" name="tDocumento" required>
                                         <option value="-1" disabled selected>Tipo Documento... *</option>
                                         <option th:each="doc : ${tiposDocumento}" th:value="${doc.idtDocumento}" th:text="${doc.nombre}"></option>
                                     </select>
@@ -63,14 +63,14 @@
                                 <!-- CONTENEDOR DE PRIMER NOMBRE -->
                                 <div class="col-sm-6 mb-sm-0">
                                     <!-- INPUT DE PRIMER NOMBRE -->
-                                    <input type="text" class="form-control form-control-user" id="txtpNombre" placeholder="Primer Nombre *" name="txtpNombre" required />
+                                    <input type="text" class="form-control form-control-user" id="txtpNombre" placeholder="Primer Nombre *" name="pNombre" required />
                                     <!-- FIN INPUT DE PRIMER NOMBRE -->
                                 </div>
                                 <!-- FIN CONTENEDOR DE PRIMER NOMBRE -->
                                 <!-- CONTENEDOR DE SEGUNDO NOMBRE -->
                                 <div class="col-sm-6">
                                     <!-- INPUT DE SEGUNDO NOMBRE -->
-                                    <input type="text" class="form-control form-control-user" id="txtsNombre" placeholder="Segundo Nombre" name="txtsNombre" required />
+                                    <input type="text" class="form-control form-control-user" id="txtsNombre" placeholder="Segundo Nombre" name="sNombre" required />
                                     <!-- FIN INPUT DE SEGUNDO NOMBRE -->
                                 </div>
                                 <!-- FIN CONTENEDOR DE SEGUNDO NOMBRE -->
@@ -81,14 +81,14 @@
                                 <!-- CONTENEDOR DE PRIMER APELLIDO -->
                                 <div class="col-sm-6 mb-sm-0">
                                     <!-- INPUT DE SEGUNDO APELLIDO -->
-                                    <input type="text" class="form-control form-control-user" id="txtpApellido" placeholder="Primer Apellido *" name="txtpApellido" required />
+                                    <input type="text" class="form-control form-control-user" id="txtpApellido" placeholder="Primer Apellido *" name="pApellido" required />
                                     <!-- FIN INPUT DE SEGUNDO APELLIDO -->
                                 </div>
                                 <!-- FIN CONTENEDOR DE PRIMER APELLIDO -->
                                 <!-- CONTENEDOR DE SEGUNDO APELLIDO -->
                                 <div class="col-sm-6">
                                     <!-- INPUT DE SEGUNDO APELLIDO -->
-                                    <input type="text" class="form-control form-control-user" id="txtsApellido" placeholder="Segundo Apellido" name="txtsApellido" required />
+                                    <input type="text" class="form-control form-control-user" id="txtsApellido" placeholder="Segundo Apellido" name="sApellido" required />
                                     <!-- FIN INPUT DE SEGUNDO APELLIDO -->
                                 </div>
                                 <!-- FIN CONTENEDOR DE SEGUNDO APELLIDO -->
@@ -97,7 +97,7 @@
                             <!-- CONTENEDOR GRUPAL DE CORREO ELECTRONICO -->
                             <div class="form-group mb-3">
                                 <!-- INPUT DE CORREO ELECTRONICO -->
-                                <input type="email" class="form-control form-control-user" id="txtEmail" placeholder="Correo Electr&oacute;nico *" name="txtEmail" required />
+                                <input type="email" class="form-control form-control-user" id="txtEmail" placeholder="Correo Electr&oacute;nico *" name="email" required />
                                 <!-- FIN INPUT DE CORREO ELECTRONICO -->
                             </div>
                             <!-- FIN CONTENEDOR GRUPAL DE CORREO ELECTRONICO -->
@@ -106,7 +106,7 @@
                                 <!-- CONTENEDOR DE DIA DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE DIA DE NACIMIENTO -->
-                                    <select class="form-select" id="txtDia" name="txtDia" required>
+                                    <select class="form-select" id="txtDia" name="dNacimiento" required>
                                         <option value="dia" disabled selected>D&iacute;a Nacim... *</option>
                                         <option th:each="dia : ${#numbers.sequence(1, 31)}" th:value="${dia}" th:text="${dia}"></option>
                                     </select>
@@ -116,7 +116,7 @@
                                 <!-- CONTENEDOR MES DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE MES DE NACIMIENTO -->
-                                    <select class="form-select" id="txtMes" name="txtMes" required>
+                                    <select class="form-select" id="txtMes" name="mNacimiento" required>
                                         <option value="mes" disabled selected>Mes Nacim... *</option>
                                         <option th:each="mes : ${#numbers.sequence(1, 12)}" th:value="${mes}" th:text="${mes}"></option>
                                     </select>
@@ -126,7 +126,7 @@
                                 <!-- CONTENEDOR ANIO DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE ANIO DE NACIMIENTO -->
-                                    <select class="form-select" id="txtAnio" name="txtAnio" required>
+                                    <select class="form-select" id="txtAnio" name="aNacimiento" required>
                                         <option value="anio" disabled selected>A&ntilde;o Nacim... *</option>
                                         <option th:each="anio : ${#numbers.sequence(1950, anioFinal)}" th:value="${anio}" th:text="${anio}"></option>
                                     </select>
@@ -140,14 +140,14 @@
                                 <!-- CONTENEDOR CONTRASENIA -->
                                 <div class="col-sm-6 mb-sm-0">
                                     <!-- INPUT CONTRASENIA -->
-                                    <input type="password" class="form-control form-control-user" id="txtPass" placeholder="Contrase&ntilde;a *" name="txtPass" required />
+                                    <input type="password" class="form-control form-control-user" id="txtPass" placeholder="Contrase&ntilde;a *" name="pass" required />
                                     <!-- FIN INPUT CONTRASENIA -->
                                 </div>
                                 <!-- FIN CONTENEDOR CONTRASENIA -->
                                 <!-- CONTENEDOR REPETIR CONTRASENIA -->
                                 <div class="col-sm-6">
                                     <!-- INPUT REPETIR CONTRASENIA -->
-                                    <input type="password" class="form-control form-control-user" id="txtRePass" placeholder="Repetir Contrase&ntilde;a *" name="txtRePass" required />
+                                    <input type="password" class="form-control form-control-user" id="txtRePass" placeholder="Repetir Contrase&ntilde;a *" name="confirmPassword" required />
                                     <!-- FIN INPUT REPETIR CONTRASENIA -->
                                 </div>
                                 <!-- FIN CONTENEDOR REPETIR CONTRASENIA -->
@@ -192,25 +192,46 @@
 </div>
 <!-- FIN CONTENEDOR PRINCIPAL -->
 
-<!-- Modal para campo vacio -->
+<!-- INPUT OCULTO ALMACENA ERROR DOCUMENTO VACIO -->
+<input type="hidden" id="errorDocumento" value="${errorDocumento}">
+<!-- FIN INPUT OCULTO ALMACENA ERROR DOCUMENTO VACIO -->
+<!-- MODAL FADE DOCUMENTO VACIO -->
 <div class="modal fade" id="campoVacioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
+    <!-- MODAL DIALOG DOCUMENTO VACIO -->
     <div class="modal-dialog" role="document">
+        <!-- MODAL CONTENT DOCUMENTO VACIO -->
         <div class="modal-content">
+            <!-- MODAL HEADER DOCUMENTO VACIO -->
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <!-- TITULO DEL HEADER -->
+                <h5 class="modal-title">Error al Registrar Usuario</h5>
+                <!-- FIN TITULO DEL HEADER -->
+                <!-- BOTON PARA CERRAR EL MODAL -->
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                   
                 </button>
+                <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
+            <!-- FIN MODAL HEADER DOCUMENTO VACIO -->
+            <!-- CUERPO DEL MODAL -->
             <div class="modal-body">El N&deg; Documento no puede estar vac&iacute;o, por favor digitelo.</div>
+            <!-- FIN CUERPO DEL MODAL -->
+            <!-- FOOTER DEL MODAL -->
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <!-- BOTON PARA CERRAR MODAL -->
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
+                <!-- FIN BOTON PARA CERRAR MODAL -->
             </div>
+            <!-- FIN FOOTER DEL MODAL -->
         </div>
+        <!-- FIN MODAL CONTENT DOCUMENTO VACIO -->
     </div>
+    <!-- FIN MODAL DIALOG DOCUMENTO VACIO -->
 </div>
+<!-- FIN MODAL FADE DOCUMENTO VACIO -->
 
+<input type="hidden" id="errorNumeroInvalido" value="${errorNumeroInvalido}">
 <!-- Modal para numero de documento invalido -->
 <div class="modal fade" id="numeroInvalidoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
@@ -218,13 +239,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">N&deg; de Documento inv&aacute;lido, por favor digite un n&uacute;mero de documento v&aacute;lido.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -237,13 +258,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Debe seleccionar un Tipo de Documento.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -256,13 +277,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Tipo de Documento inv&aacute;lido, por favor seleccione un valor de la lista.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -275,13 +296,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">El Primer Nombre es obligatorio, por favor digite su primer nombre.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -294,13 +315,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Primer Nombre inv&aacute;lido, por favor digite su Primer Nombre correctamente.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -313,13 +334,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Segundo Nombre inv&aacute;lido, por favor digite su Segundo Nombre correctamente.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -332,13 +353,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">El Primer Apellido es obligatorio, por favor digite su primer apellido.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -351,13 +372,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Primer Apellido inv&aacute;lido, por favor digite su Primer Apellido correctamente.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -370,13 +391,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Segundo Apellido inv&aacute;lido, por favor digite su Segundo Apellido correctamente.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -389,13 +410,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">El email es obligatorio, por favor digite su email.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -408,13 +429,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Email inv&aacute;lido, por favor digite un Email correcto o con Dominio &quot;@sanmateo.edu.co&quot;.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -427,13 +448,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Debe seleccionar un D&iacute;a de Nacimiento.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -446,13 +467,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">D&iacute;a de Nacimiento inv&aacute;lido, por favor seleccione un valor de la lista.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -465,13 +486,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Debe seleccionar un Mes de Nacimiento.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -484,13 +505,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Mes de Nacimiento inv&aacute;lido, por favor seleccione un valor de la lista.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -503,13 +524,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    
                 </button>
             </div>
             <div class="modal-body">Debe seleccionar un A&ntilde;o de Nacimiento.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -522,90 +543,97 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
                 </button>
             </div>
             <div class="modal-body">A&ntilde;o de Nacimiento inv&aacute;lido, por favor seleccione un valor de la lista.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal para Usuario ya existe -->
+<!-- INPUT OCULTO ALMACENA USUARIO EXISTENTE -->
+<input type="hidden" id="usuarioExistente" th:value="${usuarioExistente}">
+<!-- INPUT OCULTO ALMACENA USUARIO EXISTENTE -->
+<!-- MODAL FADE USUARIO EXISTENTE -->
 <div class="modal fade" id="usuarioExistenteModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- MODAL DIALOG USUARIO EXISTENTE -->
     <div class="modal-dialog" role="document">
+        <!-- MODAL CONTENT USUARIO EXISTENTE -->
         <div class="modal-content">
+            <!-- MODAL HEADER USUARIO EXISTENTE -->
             <div class="modal-header">
+                <!-- TITULO DEL HEADER -->
                 <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
+                <!-- FIN TITULO DEL HEADER -->
+                <!-- BOTON PARA CERRAR EL MODAL -->
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
+            <!-- FIN MODAL HEADER USUARIO EXISTENTE -->
+            <!-- CUERPO DEL MODAL -->
             <div class="modal-body">Usuario ya existe.</div>
+            <!-- FIN CUERPO DEL MODAL -->
+            <!-- FOOTER DEL MODAL -->
             <div class="modal-footer">
-                <button class="btn btn-danger" type="button" data-dismiss="modal">Cerrar</button>
+                <!-- BOTON PARA CERRAR EL MODAL -->
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
+                <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
+            <!-- FIN FOOTER DEL MODAL -->
         </div>
+        <!-- MODAL CONTENT USUARIO EXISTENTE -->
     </div>
+    <!-- FIN MODAL DIALOG USUARIO EXISTENTE -->
 </div>
+<!-- FIN MODAL FADE USUARIO EXISTENTE -->
 
-<!-- Modal para Usuario registrado Exitosamente -->
+<!-- INPUT OCULTO ALMACENA REGISTRO EXITOSO -->
+<input type="hidden" id="registroExitoso" th:value="${registroExitoso}">
+<!-- FIN INPUT OCULTO ALMACENA REGISTRO EXITOSO -->
+<!-- MODAL FADE REGISTRO EXITOSO -->
 <div class="modal fade" id="usuarioRegistradoModal" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- MODAL DIALOG REGISTRO EXITOSO -->
     <div class="modal-dialog" role="document">
+        <!-- MODAL CONTENT REGISTRO EXITOSO -->
         <div class="modal-content">
+            <!-- MODAL HEADER REGISTRO EXITOSO -->
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registro Exitoso</h5>
-                <button onclick="navigateToLogin();" class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
+                <!-- TITULO DEL HEADER -->
+                <h5 class="modal-title">Registro Exitoso</h5>
+                <!-- FIN TITULO DEL HEADER -->
+                <!-- BOTON PARA CERRAR EL MODAL -->
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
+            <!-- FIN MODAL HEADER REGISTRO EXITOSO -->
+            <!-- CUERPO DEL MODAL -->
             <div class="modal-body">Su usuario se ha credo exitosamente.</div>
+            <!-- FIN CUERPO DEL MODAL -->
+            <!-- FOOTER DEL MODAL -->
             <div class="modal-footer">
-                <button class="btn btn-success" type="button" data-dismiss="modal">Cerrar</button>
+                <!-- BOTON PARA CERRAR MODAL -->
+                <button class="btn btn-success" type="button" data-bs-dismiss="modal">Cerrar</button>
+                <!-- FIN BOTON PARA CERRAR MODAL -->
             </div>
+            <!-- FIN FOOTER DEL MODAL -->
         </div>
+        <!-- FIN MODAL CONTENT REGISTRO EXITOSO -->
     </div>
+    <!-- FIN MODAL DIALOG REGISTRO EXITOSO -->
 </div>
+<!-- FIN MODAL FADE REGISTRO EXITOSO -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script th:src="@{/js/ValidaForm.js}"></script>
-<script th:inline="javascript">
-                            <![CDATA[
-                            $(document).ready(function () {
-                                var error = [[${error}]] 'default'; // Obtenemos el error enviado por el servlet, si hay alguno.
+<script th:src="@{/js/modalsRegistrar.js}"></script>
 
-                                // Verificamos cada posible error y mostramos el modal correspondiente.
-                                if (error === "vacio") {
-                                    $("#campoVacioModal").modal("show");
-                                } else if (error === "tipo_documento_invalido") {
-                                    $("#seleccionarDocumentoModal").modal("show");
-                                } else if (error === "numero_documento_invalido") {
-                                    $("#numeroInvalidoModal").modal("show");
-                                } else if (error === "contrasenas_no_coinciden") {
-                                    $("#contrasenaNoCoincideModal").modal("show");
-                                } else if (error === "email_invalido") {
-                                    $("#emailInvalidoModal").modal("show");
-                                } else if (error === "existente") {
-                                    $("#usuarioExistenteModal").modal("show");
-                                } else if (error === "primer_nombre_invalido") {
-                                    $("#primerNombreInvalidoModal").modal("show");
-                                }
-
-                                var registro = [[${registro}]] 'default';
-                                if (registro === "exitoso") {
-                                    $('#usuarioRegistradoModal').modal('show');
-                                    console.log("El modal está siendo mostrado.");
-                                }
-                            });
-
-        </script>
 </body>
 
 </html>

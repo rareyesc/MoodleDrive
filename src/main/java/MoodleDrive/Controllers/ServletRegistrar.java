@@ -1,9 +1,14 @@
 package MoodleDrive.Controllers;
 
+import MoodleDrive.DTO.RegistroDTO;
+import MoodleDrive.Models.Autenticacion;
 import MoodleDrive.Models.Perfil;
 import MoodleDrive.Models.Tdocumento;
+import MoodleDrive.Services.AutenticacionService;
+import MoodleDrive.Services.ErrorService;
 import MoodleDrive.Services.PerfilService;
 import MoodleDrive.Services.TdocumentoService;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -18,6 +23,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/registrar")
@@ -29,6 +35,12 @@ public class ServletRegistrar {
     @Autowired
     private PerfilService perfilService;
 
+    @Autowired
+    private AutenticacionService autenticacionService;
+
+    @Autowired
+    private ErrorService errorService;
+
     @GetMapping("/formulario")
     public String mostrarFormularioRegistro(@NotNull Model model) {
         model.addAttribute("anioFinal", LocalDate.now().getYear() - 10);
@@ -36,28 +48,38 @@ public class ServletRegistrar {
         List<Tdocumento> tiposDocumento = tdocumentoService.getAllDocumentTypes();
         model.addAttribute("tiposDocumento", tiposDocumento);
 
-        // Crea un nuevo objeto Perfil para el formulario
-        model.addAttribute("perfil", new Perfil());
+        // Crea un nuevo objeto RegistroDTO para el formulario
+        model.addAttribute("registroDTO", new RegistroDTO());
 
         return "registrar";
     }
 
     @PostMapping("/formulario")
     @Transactional
-    public String registrar(@ModelAttribute("perfil") @Valid Perfil perfil, BindingResult bindingResult, Model model) {
-        // Aquí se ejecutará la validación del lado del servidor
-        // Puedes agregar la lógica de validación aquí utilizando las anotaciones de Spring
+    public String registrar(@ModelAttribute("registroDTO") @Valid RegistroDTO registroDTO, BindingResult bindingResult, Model model, RedirectAttributes redirectAttributes) {
+        List<String> errores = errorService.validateRegistroDTO(registroDTO);
 
-        // Si hay errores de validación, redirige de nuevo al formulario de registro
-        if (bindingResult.hasErrors()) {
-            model.addAttribute("anioFinal", LocalDate.now().getYear() - 10);
+        if (!errores.isEmpty()) {
+            if (errores.contains("Usuario ya registrado")) {
+                model.addAttribute("usuarioExistente", true);
+            }
+            for (int i = 0; i < errores.size(); i++) {
+                model.addAttribute("error" + (i + 1), errores.get(i));
+                System.out.println("Error " + (i + 1) + ": " + errores.get(i));
+            }
             List<Tdocumento> tiposDocumento = tdocumentoService.getAllDocumentTypes();
             model.addAttribute("tiposDocumento", tiposDocumento);
+            model.addAttribute("anioFinal", LocalDate.now().getYear() - 10);
             return "registrar";
         }
 
-        // Si no hay errores de validación, guarda el perfil en la base de datos y redirige a una página de registro exitoso
+        Autenticacion autenticacion = autenticacionService.crearAutenticacion(registroDTO);
+        autenticacionService.guardarAutenticacion(autenticacion);
+
+        Perfil perfil = perfilService.crearPerfil(registroDTO, autenticacion);
         perfilService.save(perfil);
-        return "registroExitoso"; // Asegúrate de crear esta vista
+
+        redirectAttributes.addFlashAttribute("registroExitoso", true);
+        return "redirect:/registrar/formulario";
     }
 }

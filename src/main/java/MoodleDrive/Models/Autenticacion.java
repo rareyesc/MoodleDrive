@@ -1,16 +1,19 @@
 package MoodleDrive.Models;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Entity
 @Table(name = "autenticacion")
 public class Autenticacion {
 
+    private static final Logger logger = LogManager.getLogger(Autenticacion.class);
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idAuth")
+    @Column(name = "id_auth")
     private int idAuth;
 
     @Column(name = "email", nullable = false, unique = true)
@@ -22,14 +25,14 @@ public class Autenticacion {
     @Column(name = "estado", nullable = false, columnDefinition = "TINYINT default 1")
     private int estado;
 
-    @Column(name = "tokenRecuperacion")
+    @Column(name = "token_recuperacion")
     private String tokenRecuperacion;
 
-    @Column(name = "fechaExpiracionToken")
+    @Column(name = "fecha_expiracion_token")
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime fechaExpiracionToken;
 
-    @Column(name = "fechaRegistro", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @Column(name = "fecha_registro", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime fechaRegistro;
 
@@ -37,6 +40,7 @@ public class Autenticacion {
      * Constructor predeterminado que inicializa un objeto Autenticacion sin valores específicos.
      */
     public Autenticacion() {
+        this.estado = 1;
     }
 
     /**
