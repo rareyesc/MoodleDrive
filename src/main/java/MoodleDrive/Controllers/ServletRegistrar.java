@@ -1,13 +1,9 @@
 package MoodleDrive.Controllers;
 
 import MoodleDrive.DTO.RegistroDTO;
-import MoodleDrive.Models.Autenticacion;
-import MoodleDrive.Models.Perfil;
-import MoodleDrive.Models.Tdocumento;
-import MoodleDrive.Services.AutenticacionService;
-import MoodleDrive.Services.ErrorService;
-import MoodleDrive.Services.PerfilService;
-import MoodleDrive.Services.TdocumentoService;
+import MoodleDrive.Models.*;
+import MoodleDrive.Repositories.AsignaRolRepository;
+import MoodleDrive.Services.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -37,6 +33,15 @@ public class ServletRegistrar {
 
     @Autowired
     private AutenticacionService autenticacionService;
+
+    @Autowired
+    private RolService rolService;
+
+    @Autowired
+    private AsignaRolService asignaRolService;
+
+    @Autowired
+    private AsignaRolRepository asignaRolRepository;
 
     @Autowired
     private ErrorService errorService;
@@ -78,6 +83,11 @@ public class ServletRegistrar {
 
         Perfil perfil = perfilService.crearPerfil(registroDTO, autenticacion);
         perfilService.save(perfil);
+
+        int idRolEstudiante = rolService.getIdByNombreRol("estudiante");
+        Rol rolEstudiante = rolService.getRolById(idRolEstudiante);
+        AsignaRol asignaRol = asignaRolService.asignaRol(registroDTO, autenticacion, rolEstudiante);
+        asignaRolRepository.save(asignaRol);
 
         redirectAttributes.addFlashAttribute("registroExitoso", true);
         return "redirect:/registrar/formulario";

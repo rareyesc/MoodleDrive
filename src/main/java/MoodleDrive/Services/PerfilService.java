@@ -25,7 +25,7 @@ public class PerfilService {
 
     public void save(Perfil perfil) {
         perfilRepository.save(perfil);
-        logger.info("Perfil guardado/actualizado para : " + perfil.getsNombre() + perfil.getsApellido());
+        logger.info("Perfil guardado/actualizado para : " + perfil.getpNombre() + " " +perfil.getpApellido());
     }
 
     public Perfil crearPerfil(RegistroDTO registroDTO, Autenticacion autenticacion) {
@@ -41,7 +41,7 @@ public class PerfilService {
         perfil.setdNacimiento(registroDTO.getdNacimiento());
         perfil.setmNacimiento(registroDTO.getmNacimiento());
         perfil.setaNacimiento(registroDTO.getaNacimiento());
-        logger.info("Perfil creado para : " + errorService.formatName(registroDTO.getpNombre()) + errorService.formatName(registroDTO.getpApellido()));
+        logger.info("Perfil creado para : " + errorService.formatName(registroDTO.getpNombre()) + " " + errorService.formatName(registroDTO.getpApellido()));
         return perfil;
     }
 }

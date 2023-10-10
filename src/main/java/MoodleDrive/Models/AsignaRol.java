@@ -3,19 +3,20 @@ package MoodleDrive.Models;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "asignaRol")
+@Table(name = "asigna_rol")
 public class AsignaRol {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_asigna_rol")
     private int idAsignaRol;
 
     @ManyToOne
-    @JoinColumn(name = "idAuth")
+    @JoinColumn(name = "id_auth")
     private Autenticacion autenticacion;
 
     @ManyToOne
-    @JoinColumn(name = "idRol")
+    @JoinColumn(name = "id_rol")
     private Rol rol;
 
     /**
