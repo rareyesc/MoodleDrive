@@ -68,6 +68,9 @@ public class ServletRegistrar {
             if (errores.contains("Usuario ya registrado")) {
                 model.addAttribute("usuarioExistente", true);
             }
+            if (errores.contains("La contraseña no puede estar vacia y debe contener al menos 8 caracteres")) {
+                model.addAttribute("contraseniaInvalida", true);
+            }
             for (int i = 0; i < errores.size(); i++) {
                 model.addAttribute("error" + (i + 1), errores.get(i));
                 System.out.println("Error " + (i + 1) + ": " + errores.get(i));

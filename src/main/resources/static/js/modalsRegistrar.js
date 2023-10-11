@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
         $('#usuarioExistenteModal').modal('show');
     }
 
+    if (usuarioExistente == 'true') {
+            $('#contraseniaInvalida').modal('show');
+        }
+
     if (registroExitoso == 'true') {
         $('#usuarioRegistradoModal').modal('show');
         $('#usuarioRegistradoModal').on('hidden.bs.modal', function () {

@@ -116,7 +116,7 @@ public class ErrorService {
     }
 
     private boolean validarContrasenia(String contrasenia) {
-        return contrasenia != null && contrasenia.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])(?=.{8,})$");
+        return contrasenia != null && contrasenia.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_])(?=\\S+$).{8,}$");
     }
 
     private boolean validarContraseniasIguales(String pass, String confirmPassword) {
