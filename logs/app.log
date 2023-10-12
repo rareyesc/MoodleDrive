@@ -1,179 +1,34 @@
-2023-10-10T19:22:35.418-05:00  INFO 1128 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 1128 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
-2023-10-10T19:22:35.424-05:00  INFO 1128 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
-2023-10-10T19:22:36.142-05:00  INFO 1128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-10T19:22:36.212-05:00  INFO 1128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
-2023-10-10T19:22:36.765-05:00  INFO 1128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-10-10T19:22:36.777-05:00  INFO 1128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-10T19:22:36.777-05:00  INFO 1128 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-10T19:22:36.896-05:00  INFO 1128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-10T19:22:36.897-05:00  INFO 1128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1418 ms
-2023-10-10T19:22:37.048-05:00  INFO 1128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-10T19:22:37.513-05:00  INFO 1128 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f536481
-2023-10-10T19:22:37.516-05:00  INFO 1128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-10T19:22:37.601-05:00  INFO 1128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-10T19:22:37.671-05:00  INFO 1128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-10T19:22:37.674-05:00  INFO 1128 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-10T19:22:37.889-05:00  INFO 1128 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T19:22:38.072-05:00  INFO 1128 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-10T19:22:38.440-05:00  INFO 1128 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T19:22:39.132-05:00  INFO 1128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-10T19:22:39.135-05:00  INFO 1128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T19:22:39.525-05:00  INFO 1128 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-10-10T19:22:39.910-05:00  WARN 1128 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2023-10-11T20:37:43.827-05:00  INFO 15936 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 15936 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
+2023-10-11T20:37:43.834-05:00  INFO 15936 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-11T20:37:44.573-05:00  INFO 15936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-11T20:37:44.643-05:00  INFO 15936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 5 JPA repository interfaces.
+2023-10-11T20:37:45.232-05:00  INFO 15936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-11T20:37:45.245-05:00  INFO 15936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-11T20:37:45.246-05:00  INFO 15936 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-11T20:37:45.370-05:00  INFO 15936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-11T20:37:45.370-05:00  INFO 15936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+2023-10-11T20:37:45.504-05:00  INFO 15936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-11T20:37:45.894-05:00  INFO 15936 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5234b61a
+2023-10-11T20:37:45.896-05:00  INFO 15936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-11T20:37:45.981-05:00  INFO 15936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-11T20:37:46.058-05:00  INFO 15936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-11T20:37:46.060-05:00  INFO 15936 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-11T20:37:46.265-05:00  INFO 15936 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T20:37:46.402-05:00  INFO 15936 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-11T20:37:46.754-05:00  INFO 15936 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-11T20:37:47.451-05:00  INFO 15936 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-11T20:37:47.454-05:00  INFO 15936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-11T20:37:47.832-05:00  INFO 15936 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-10-11T20:37:48.200-05:00  WARN 15936 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: f784ab23-5916-43db-ac91-9d55aa7c8612
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-10-10T19:22:40.187-05:00  INFO 1128 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b4a3114, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4af5c14c, org.springframework.security.web.context.SecurityContextHolderFilter@828e2d8, org.springframework.security.web.header.HeaderWriterFilter@1aaa3406, org.springframework.security.web.authentication.logout.LogoutFilter@75381b61, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b9ed77b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@548e70f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fc00158, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74d4f542, org.springframework.security.web.access.ExceptionTranslationFilter@4b60ff1c, org.springframework.security.web.access.intercept.AuthorizationFilter@5339cdc6]
-2023-10-10T19:22:40.476-05:00  INFO 1128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-10T19:22:40.486-05:00  INFO 1128 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 5.479 seconds (process running for 5.867)
-2023-10-10T19:22:40.488-05:00  INFO 1128 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2023-10-10T19:45:39.244-05:00  INFO 1128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-10T19:45:39.244-05:00  INFO 1128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-10T19:45:39.246-05:00  INFO 1128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-10-10T22:26:28.545-05:00  INFO 9024 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 9024 (started by rarey in D:\MoodleDrive)
-2023-10-10T22:26:28.547-05:00  INFO 9024 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
-2023-10-10T22:26:29.470-05:00  INFO 9024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-10T22:26:29.546-05:00  INFO 9024 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
-2023-10-10T22:26:30.053-05:00  INFO 9024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-10T22:26:30.479-05:00  INFO 9024 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f857e08
-2023-10-10T22:26:30.482-05:00  INFO 9024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-10T22:26:30.613-05:00  INFO 9024 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-10T22:26:30.702-05:00  INFO 9024 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-10T22:26:30.708-05:00  INFO 9024 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-10T22:26:30.952-05:00  INFO 9024 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:26:31.143-05:00  INFO 9024 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-10T22:26:31.607-05:00  INFO 9024 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:26:32.352-05:00  INFO 9024 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-10T22:26:32.356-05:00  INFO 9024 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:26:32.892-05:00  INFO 9024 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-10-10T22:26:33.398-05:00  WARN 9024 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: f0252ba0-2b60-4632-9b70-f14dc1733b63
+Using generated security password: 202192f1-91f6-4439-8abd-7990f84c65ad
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-10-10T22:26:33.551-05:00  INFO 9024 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12d24c43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf27411, org.springframework.security.web.context.SecurityContextHolderFilter@46c28400, org.springframework.security.web.header.HeaderWriterFilter@4f8488ef, org.springframework.security.web.authentication.logout.LogoutFilter@63893cf6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@509bf2d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f5d587c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ced1fb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a66949a, org.springframework.security.web.access.ExceptionTranslationFilter@5702e6f3, org.springframework.security.web.access.intercept.AuthorizationFilter@31d51518]
-2023-10-10T22:26:34.330-05:00  INFO 9024 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 6.098 seconds (process running for 7.203)
-2023-10-10T22:26:34.333-05:00  INFO 9024 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2023-10-10T22:26:35.025-05:00  INFO 9024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:26:35.028-05:00  INFO 9024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-10T22:26:35.040-05:00  INFO 9024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-10T22:27:50.953-05:00  INFO 13800 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 13800 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
-2023-10-10T22:27:50.956-05:00  INFO 13800 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
-2023-10-10T22:27:51.562-05:00  INFO 13800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-10T22:27:51.625-05:00  INFO 13800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
-2023-10-10T22:27:52.131-05:00  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-10-10T22:27:52.141-05:00  INFO 13800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-10T22:27:52.141-05:00  INFO 13800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-10T22:27:52.243-05:00  INFO 13800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-10T22:27:52.244-05:00  INFO 13800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1248 ms
-2023-10-10T22:27:52.342-05:00  INFO 13800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-10T22:27:52.618-05:00  INFO 13800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ee88e21
-2023-10-10T22:27:52.620-05:00  INFO 13800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-10T22:27:52.691-05:00  INFO 13800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-10T22:27:52.741-05:00  INFO 13800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-10T22:27:52.743-05:00  INFO 13800 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-10T22:27:52.885-05:00  INFO 13800 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:27:53.011-05:00  INFO 13800 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-10T22:27:53.287-05:00  INFO 13800 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:27:53.882-05:00  INFO 13800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-10T22:27:53.885-05:00  INFO 13800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:27:54.228-05:00  INFO 13800 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-10-10T22:27:54.574-05:00  WARN 13800 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: a4213480-c102-4f9c-acfc-1d3f92cce88c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-10-10T22:27:54.842-05:00  INFO 13800 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@352bea0e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cf6dd4d, org.springframework.security.web.context.SecurityContextHolderFilter@3793896e, org.springframework.security.web.header.HeaderWriterFilter@16ecdb6d, org.springframework.security.web.authentication.logout.LogoutFilter@58e46572, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45bb502f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17fbbf0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4708acc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75381b61, org.springframework.security.web.access.ExceptionTranslationFilter@22dddb13, org.springframework.security.web.access.intercept.AuthorizationFilter@32ae890]
-2023-10-10T22:27:55.114-05:00  INFO 13800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-10T22:27:55.123-05:00  INFO 13800 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 4.532 seconds (process running for 4.887)
-2023-10-10T22:27:55.125-05:00  INFO 13800 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2023-10-10T22:28:04.219-05:00  INFO 13800 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-10T22:28:04.219-05:00  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-10T22:28:04.221-05:00  INFO 13800 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-10-10T22:36:09.535-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Autenticacion creada con el email: prueba@sanmateo.edu.co
-2023-10-10T22:36:09.663-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Autenticacion guardada con el email: prueba@sanmateo.edu.co
-2023-10-10T22:36:09.664-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Perfil creado para : Andres Cuellar
-2023-10-10T22:36:09.667-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Perfil guardado/actualizado para : Andres Cuellar
-2023-10-10T22:36:09.668-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Buscando id del rol con nombre de rol : estudiante
-2023-10-10T22:36:09.676-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Buscando nombre del rol por id : 2
-2023-10-10T22:36:09.678-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Rol Asignado para : Andres Cuellar, Rol: estudiante
-2023-10-10T22:39:06.848-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Autenticacion creada con el email: lin_magaly@sanmateo.edu.co
-2023-10-10T22:39:06.941-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Autenticacion guardada con el email: lin_magaly@sanmateo.edu.co
-2023-10-10T22:39:06.941-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Perfil creado para : Lina Lugo
-2023-10-10T22:39:06.943-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Perfil guardado/actualizado para : Lina Lugo
-2023-10-10T22:39:06.943-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Buscando id del rol con nombre de rol : estudiante
-2023-10-10T22:39:06.947-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Buscando nombre del rol por id : 2
-2023-10-10T22:39:06.949-05:00  INFO 13800 --- [http-nio-8080-exec-9] M.Services.AutenticacionService          : Rol Asignado para : Lina Lugo, Rol: estudiante
-2023-10-10T22:57:27.512-05:00  INFO 15916 --- [main] M.MoodleDriveApplicationTests            : Starting MoodleDriveApplicationTests using Java 17.0.8 with PID 15916 (started by rarey in D:\MoodleDrive)
-2023-10-10T22:57:27.514-05:00  INFO 15916 --- [main] M.MoodleDriveApplicationTests            : No active profile set, falling back to 1 default profile: "default"
-2023-10-10T22:57:28.505-05:00  INFO 15916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-10T22:57:28.584-05:00  INFO 15916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
-2023-10-10T22:57:29.212-05:00  INFO 15916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-10T22:57:29.682-05:00  INFO 15916 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f857e08
-2023-10-10T22:57:29.685-05:00  INFO 15916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-10T22:57:29.831-05:00  INFO 15916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-10T22:57:29.944-05:00  INFO 15916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-10T22:57:29.949-05:00  INFO 15916 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-10T22:57:30.259-05:00  INFO 15916 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:57:30.495-05:00  INFO 15916 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-10T22:57:31.048-05:00  INFO 15916 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:57:31.833-05:00  INFO 15916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-10T22:57:31.837-05:00  INFO 15916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:57:32.364-05:00  INFO 15916 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-10-10T22:57:32.877-05:00  WARN 15916 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: bd5d385f-73fe-46b4-87c0-e992e3c64d5e
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-10-10T22:57:33.026-05:00  INFO 15916 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12d24c43, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf27411, org.springframework.security.web.context.SecurityContextHolderFilter@46c28400, org.springframework.security.web.header.HeaderWriterFilter@4f8488ef, org.springframework.security.web.authentication.logout.LogoutFilter@63893cf6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@509bf2d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f5d587c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ced1fb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a66949a, org.springframework.security.web.access.ExceptionTranslationFilter@5702e6f3, org.springframework.security.web.access.intercept.AuthorizationFilter@31d51518]
-2023-10-10T22:57:33.804-05:00  INFO 15916 --- [main] M.MoodleDriveApplicationTests            : Started MoodleDriveApplicationTests in 6.654 seconds (process running for 7.976)
-2023-10-10T22:57:33.807-05:00  INFO 15916 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2023-10-10T22:57:34.371-05:00  INFO 15916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:57:34.376-05:00  INFO 15916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-10-10T22:57:34.387-05:00  INFO 15916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-10-10T22:57:44.999-05:00  INFO 15928 --- [main] MoodleDrive.MoodleDriveApplication       : Starting MoodleDriveApplication using Java 17.0.8 with PID 15928 (D:\MoodleDrive\target\classes started by rarey in D:\MoodleDrive)
-2023-10-10T22:57:45.002-05:00  INFO 15928 --- [main] MoodleDrive.MoodleDriveApplication       : No active profile set, falling back to 1 default profile: "default"
-2023-10-10T22:57:45.614-05:00  INFO 15928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-10-10T22:57:45.676-05:00  INFO 15928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
-2023-10-10T22:57:46.177-05:00  INFO 15928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-10-10T22:57:46.186-05:00  INFO 15928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-10-10T22:57:46.187-05:00  INFO 15928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
-2023-10-10T22:57:46.290-05:00  INFO 15928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-10-10T22:57:46.290-05:00  INFO 15928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
-2023-10-10T22:57:46.398-05:00  INFO 15928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-10-10T22:57:46.665-05:00  INFO 15928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@601eb4af
-2023-10-10T22:57:46.667-05:00  INFO 15928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-10-10T22:57:46.737-05:00  INFO 15928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-10-10T22:57:46.786-05:00  INFO 15928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
-2023-10-10T22:57:46.789-05:00  INFO 15928 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-10-10T22:57:46.934-05:00  INFO 15928 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:57:47.060-05:00  INFO 15928 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-10-10T22:57:47.346-05:00  INFO 15928 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-10-10T22:57:47.944-05:00  INFO 15928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-10-10T22:57:47.947-05:00  INFO 15928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-10-10T22:57:48.290-05:00  INFO 15928 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-10-10T22:57:48.627-05:00  WARN 15928 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 40e83820-21e5-4f77-b386-175fee835c37
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-10-10T22:57:48.860-05:00  INFO 15928 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c80b1d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30eed725, org.springframework.security.web.context.SecurityContextHolderFilter@78b888df, org.springframework.security.web.header.HeaderWriterFilter@7bfd8f92, org.springframework.security.web.authentication.logout.LogoutFilter@43e9eddf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5eba0cc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@565fa7d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16ecdb6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a44ad96, org.springframework.security.web.access.ExceptionTranslationFilter@45ed58b, org.springframework.security.web.access.intercept.AuthorizationFilter@58e46572]
-2023-10-10T22:57:49.119-05:00  INFO 15928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-10-10T22:57:49.127-05:00  INFO 15928 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 4.483 seconds (process running for 4.835)
-2023-10-10T22:57:49.129-05:00  INFO 15928 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
-2023-10-10T22:58:09.636-05:00  INFO 15928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-10T22:58:09.636-05:00  INFO 15928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-10-10T22:58:09.637-05:00  INFO 15928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-10-10T23:00:32.054-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Autenticacion creada con el email: jepalacioe@sanmateo.edu.co
-2023-10-10T23:00:32.191-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Autenticacion guardada con el email: jepalacioe@sanmateo.edu.co
-2023-10-10T23:00:32.192-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Perfil creado para : Andres Ruben
-2023-10-10T23:00:32.195-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Perfil guardado/actualizado para : Andres Ruben
-2023-10-10T23:00:32.195-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Buscando id del rol con nombre de rol : estudiante
-2023-10-10T23:00:32.208-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Buscando nombre del rol por id : 2
-2023-10-10T23:00:32.210-05:00  INFO 15928 --- [http-nio-8080-exec-6] M.Services.AutenticacionService          : Rol Asignado para : Andres Ruben, Rol: estudiante
+2023-10-11T20:37:48.482-05:00  INFO 15936 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4af5c14c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74d4f542, org.springframework.security.web.context.SecurityContextHolderFilter@43e9eddf, org.springframework.security.web.header.HeaderWriterFilter@791dcda7, org.springframework.security.web.authentication.logout.LogoutFilter@2801ccb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a8177f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b14628b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47483211, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25d5327, org.springframework.security.web.access.ExceptionTranslationFilter@1c74251b, org.springframework.security.web.access.intercept.AuthorizationFilter@5b9ed77b]
+2023-10-11T20:37:48.794-05:00  INFO 15936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-11T20:37:48.802-05:00  INFO 15936 --- [main] MoodleDrive.MoodleDriveApplication       : Started MoodleDriveApplication in 5.405 seconds (process running for 5.92)
+2023-10-11T20:37:48.804-05:00  INFO 15936 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2023-10-11T20:37:53.150-05:00  INFO 15936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-11T20:37:53.151-05:00  INFO 15936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-11T20:37:53.153-05:00  INFO 15936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

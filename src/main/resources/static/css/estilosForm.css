@@ -56,7 +56,7 @@ body {
 
 .bg-login-image {
     background: url(/images/SanMateo_Login.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover
 }
 

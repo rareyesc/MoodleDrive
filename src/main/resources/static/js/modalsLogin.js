@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("El DOM ha sido completamente cargado y analizado");
     var closeButtons = document.querySelectorAll('.closeModalButton');
     closeButtons.forEach(function (button) {
         button.addEventListener('click', function () {
@@ -21,5 +20,4 @@ if (window.history.replaceState) {
 
 function navigateToLogin() {
     $('#usuarioRegistradoModal').modal('hide');
-    console.log("navigateToLogin ha sido ejecutado");
 }
