@@ -16,19 +16,34 @@
 </head>
 
 <body class="bg-primary">
+<!-- CONTENEDOR PRINCIPAL -->
 <div class="container">
+    <!-- CONTENEDOR DE COLUMNA -->
     <div class="row justify-content-center">
+        <!-- CONTENEDOR SEPARADOR -->
         <div class="col-xl-10 col-lg-12 col-md-9">
-            <div class="card o-hidden border-0 shadow-lg my-5">
+            <!-- CONTENEDOR CARD -->
+            <div class="card o-hidden border border-0 bs-box-shadow-lg my-5">
+                <!-- CONTENEDOR CARD-BODY -->
                 <div class="card-body p-0">
+                    <!-- MANEJO DE LA PAGINA EN COLUMNA -->
                     <div class="row">
+                        <!-- IMAGEN EN LA PRIMER COLUMNA -->
                         <div class="col-lg-6 d-none d-lg-block bg-login-image rounded-start-2"></div>
+                        <!-- FIN IMAGEN EN LA PRIMER COLUMNA -->
+                        <!-- DISTRIBUCION EN 6 COLUMNAS -->
                         <div class="col-lg-6">
+                            <!-- CONTENEDOR CON PADDING -->
                             <div class="p-5">
+                                <!-- CONTENEDOR DE TEXTO CENTRADO -->
                                 <div class="text-center">
+                                    <!-- TITULO DE CUERPO DEL FORMULARIO -->
                                     <h1 class="h4 text-gray-900 mb-4">¡Bienvenido!</h1>
+                                    <!-- FIN TITULO DE CUERPO DEL FORMULARIO -->
                                 </div>
-                                <form class="user" method="POST" id="loginForm" th:action="@{/login/user}">
+                                <!-- FIN CONTENEDOR DE TEXTO CENTRADO -->
+                                <!-- INICIO DEL FORMULARIO -->
+                                <form th:action="@{/login/user}" method="POST" id="loginForm" class="user">
                                     <!-- CONTENEDOR GRUPAL DE CORREO ELECTRONICO -->
                                     <div class="form-group mb-3">
                                         <!-- INPUT DE CORREO ELECTRONICO -->
@@ -39,110 +54,98 @@
                                     <!-- CONTENEDOR GRUPAL DE CONTRASEÑA -->
                                     <div class="form-group mb-3">
                                         <!-- INPUT DE CONTRASEÑA -->
-                                        <input type="password" class="form-control form-control-user" id="pass" placeholder="Contrase&ntilde;a" name="pass" required />
+                                        <input type="password" class="form-control form-control-user" id="txtpass" placeholder="Contrase&ntilde;a" name="password" required />
                                         <!-- FIN INPUT DE CONTRASEÑA -->
                                     </div>
                                     <!-- FIN CONTENEDOR GRUPAL DE CONTRASEÑA -->
-                                    <hr>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
-                                        Ingresar
-                                    </button>
+                                    <!-- SALTO DE LINEA CON SEPARADOR DE LINEA -->
+                                    <hr />
+                                    <!-- FIN SALTO DE LINEA CON SEPARADOR DE LINEA -->
+                                    <!-- BOTON DE ENVIO DEL FORMULARIO LOGIN -->
+                                    <button type="submit" class="btn btn-primary btn-user">Ingresar</button>
+                                    <!-- FIN BOTON DE ENVIO DEL FORMULARIO LOGIN -->
                                 </form>
-                                <hr>
+                                <!-- FIN INICIO DEL FORMULARIO -->
+                                <!-- SALTO DE LINEA CON SEPARADOR DE LINEA -->
+                                <hr />
+                                <!-- FIN SALTO DE LINEA CON SEPARADOR DE LINEA -->
+                                <!-- CONTENEDOR PARA OLVIDAR CONTRASENIA -->
                                 <div class="text-center">
+                                    <!-- LINK HACIA OLVIDAR CONTRASENIA -->
                                     <a class="small" th:href="@{/forgotPassword}">Olvid&eacute; mi Contrase&ntilde;a</a>
+                                    <!-- FIN LINK HACIA OLVIDAR CONTRASENIA -->
                                 </div>
+                                <!-- FIN CONTENEDOR PARA OLVIDAR CONTRASENIA -->
+                                <!-- CONTENEDOR PARA CREAR CUENTA -->
                                 <div class="text-center">
+                                    <!-- LINK HACIA CREAR CUENTA -->
                                     <a class="small" th:href="@{/registrar/formulario}">¡Crea una Cuenta!</a>
+                                    <!-- FIN LINK HACIA CREAR CUENTA -->
                                 </div>
+                                <!-- FIN CONTENEDOR PARA CREAR CUENTA -->
                             </div>
+                            <!-- FIN CONTENEDOR CON PADDING -->
                         </div>
+                        <!-- FINDISTRIBUCION EN 6 COLUMNAS -->
                     </div>
+                    <!-- FIN MANEJO DE LA PAGINA EN COLUMNA -->
                 </div>
+                <!-- FIN CONTENEDOR CARD-BODY -->
             </div>
+            <!-- FIN CONTENEDOR CARD -->
         </div>
+        <!-- FIN CONTENEDOR SEPARADOR -->
     </div>
+    <!-- FIN CONTENEDOR DE COLUMNA -->
 </div>
+<!-- FIN CONTENEDOR PRINCIPAL -->
 
-<!-- Modal para usuario incorrecto -->
-<div class="modal fade" id="usuarioIncorrectoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Error de Logueo</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">El usuario o la contrase&ntilde;a son Incorrectos.</div>
-            <div class="modal-footer">
-                <button class="btn btn-danger closeModalButton" type="button" data-modal-id="usuarioIncorrectoModal">
-                    Cerrar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal para usuario inactivo -->
-<div class="modal fade" id="usuarioInactivoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Error de Logueo</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">El usuario está inactivo. Por favor, contacta al administrador..</div>
-            <div class="modal-footer">
-                <button class="btn btn-danger closeModalButton" type="button" data-modal-id="usuarioInactivoModal">
-                    Cerrar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal para Usuario ya existe -->
-<div class="modal fade" id="usuarioExistenteModal" tabindex="-1" role="dialog"
+<div class="modal fade" id="usuarioPassIncorrecto" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Error al Registrar Usuario</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title">Error de Logueo</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">Usuario ya existe.</div>
+            <div class="modal-body">El usuario o la contrase&ntilde;a son incorrectos.</div>
             <div class="modal-footer">
-                <button class="btn btn-danger closeModalButton" type="button" data-modal-id="usuarioExistenteModal">
-                    Cerrar
-                </button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal para Usuario registrado Exitosamente -->
-<div class="modal fade" id="usuarioRegistradoModal" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="usuarioInactivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registro Exitoso</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h5 class="modal-title">Error de Logueo</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body">Su usuario se ha creado exitosamente.</div>
+            <div class="modal-body">El usuario está inactivo. Por favor, contacta al administrador.</div>
             <div class="modal-footer">
-                <button class="btn btn-success closeModalButton" type="button" data-modal-id="usuarioRegistradoModal">
-                    Cerrar
-                </button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- INPUT OCULTO ALMACENA CAMPOS VACIOS -->
+<input type="hidden" id="campos_vacios" th:value="${campos_vacios}">
+<!-- FIN INPUT OCULTO ALMACENA CAMPOS VACIOS -->
+<div class="modal fade" id="campos_vacios" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Error de Logueo</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">El email y la contrase&ntilde;a con obligatorios.</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -151,8 +154,19 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script th:src="@{/js/modalsLogin.js}"></script>
+<script th:inline="javascript">
+    var errorType = /*[[${session.errorType}]]*/ 'defaultError';
 
+    $(document).ready(function() {
+        if (errorType === 'invalid_credentials') {
+            $('#usuarioPassIncorrecto').modal('show');
+        } else if (errorType === 'user_disabled') {
+            $('#usuarioInactivo').modal('show');
+        } else if (errorType) {
+            console.log('Error Desconocido: ' + errorType);
+        }
+        sessionStorage.removeItem('errorMessage');
+    });
+</script>
 </body>
-
 </html>

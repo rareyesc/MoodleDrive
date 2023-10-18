@@ -64,7 +64,20 @@ public class Perfil {
      */
     public Perfil() {
     }
-
+    /**
+     * Constructor para inicializar un objeto Perfil con valores específicos.
+     *
+     * @param autenticacion Autenticación asociada a este perfil.
+     * @param nDocumento    Número de documento del individuo.
+     * @param tDocumento    Tipo de documento del individuo.
+     * @param pNombre       Primer nombre del individuo.
+     * @param sNombre       Segundo nombre del individuo.
+     * @param pApellido     Primer apellido del individuo.
+     * @param sApellido     Segundo apellido del individuo.
+     * @param dNacimiento   Día de nacimiento del individuo.
+     * @param mNacimiento   Mes de nacimiento del individuo.
+     * @param aNacimiento   Año de nacimiento del individuo.
+     */
     public Perfil(Autenticacion autenticacion, String nDocumento, Tdocumento tDocumento, String pNombre, String sNombre, String pApellido, String sApellido, int dNacimiento, int mNacimiento, int aNacimiento) {
         this.autenticacion = autenticacion;
         this.nDocumento = nDocumento;
@@ -77,91 +90,135 @@ public class Perfil {
         this.mNacimiento = mNacimiento;
         this.aNacimiento = aNacimiento;
     }
-
+    /**
+     * @return El identificador único del perfil.
+     */
     public int getIdPerfil() {
         return idPerfil;
     }
-
+    /**
+     * @param idPerfil El nuevo identificador único del perfil.
+     */
     public void setIdPerfil(int idPerfil) {
         this.idPerfil = idPerfil;
     }
-
+    /**
+     * @return La autenticación asociada a este perfil.
+     */
     public Autenticacion getAutenticacion() {
         return autenticacion;
     }
-
+    /**
+     * @param autenticacion La nueva autenticación asociada a este perfil.
+     */
     public void setAutenticacion(Autenticacion autenticacion) {
         this.autenticacion = autenticacion;
     }
-
+    /**
+     * @return El número de documento del individuo.
+     */
     public String getnDocumento() {
         return nDocumento;
     }
-
+    /**
+     * @param nDocumento El nuevo número de documento del individuo.
+     */
     public void setnDocumento(String nDocumento) {
         this.nDocumento = nDocumento;
     }
-
+    /**
+     * @return El tipo de documento del individuo.
+     */
     public Tdocumento gettDocumento() {
         return tDocumento;
     }
-
+    /**
+     * @param tDocumento El nuevo tipo de documento del individuo.
+     */
     public void settDocumento(Tdocumento tDocumento) {
         this.tDocumento = tDocumento;
     }
-
+    /**
+     * @return El primer nombre del individuo.
+     */
     public String getpNombre() {
         return pNombre;
     }
-
+    /**
+     * @param pNombre El nuevo primer nombre del individuo.
+     */
     public void setpNombre(String pNombre) {
         this.pNombre = pNombre;
     }
-
+    /**
+     * @return El segundo nombre del individuo.
+     */
     public String getsNombre() {
         return sNombre;
     }
-
+    /**
+     * @param sNombre El nuevo segundo nombre del individuo.
+     */
     public void setsNombre(String sNombre) {
         this.sNombre = sNombre;
     }
-
+    /**
+     * @return El primer apellido del individuo.
+     */
     public String getpApellido() {
         return pApellido;
     }
-
+    /**
+     * @param pApellido El nuevo primer apellido del individuo.
+     */
     public void setpApellido(String pApellido) {
         this.pApellido = pApellido;
     }
-
+    /**
+     * @return El segundo apellido del individuo.
+     */
     public String getsApellido() {
         return sApellido;
     }
-
+    /**
+     * @param sApellido El nuevo segundo apellido del individuo.
+     */
     public void setsApellido(String sApellido) {
         this.sApellido = sApellido;
     }
-
+    /**
+     * @return El día de nacimiento del individuo.
+     */
     public int getdNacimiento() {
         return dNacimiento;
     }
-
+    /**
+     * @param dNacimiento El nuevo día de nacimiento del individuo.
+     */
     public void setdNacimiento(int dNacimiento) {
         this.dNacimiento = dNacimiento;
     }
-
+    /**
+     * @return El mes de nacimiento del individuo.
+     */
     public int getmNacimiento() {
         return mNacimiento;
     }
-
+    /**
+     * @param mNacimiento El nuevo mes de nacimiento del individuo.
+     */
     public void setmNacimiento(int mNacimiento) {
         this.mNacimiento = mNacimiento;
     }
-
+    /**
+     * @return El año de nacimiento del individuo.
+     */
     public int getaNacimiento() {
         return aNacimiento;
     }
-
+    /**
+     * @param aNacimiento El nuevo año de nacimiento del individuo.
+     */
     public void setaNacimiento(int aNacimiento) {
         this.aNacimiento = aNacimiento;
     }

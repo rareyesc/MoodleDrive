@@ -29,11 +29,9 @@ public class Autenticacion {
     private String tokenRecuperacion;
 
     @Column(name = "fecha_expiracion_token")
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime fechaExpiracionToken;
 
     @Column(name = "fecha_registro", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime fechaRegistro;
 
     /**

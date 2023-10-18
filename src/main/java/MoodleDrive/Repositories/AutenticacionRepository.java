@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AutenticacionRepository extends JpaRepository<Autenticacion, Integer> {
-
     boolean existsByEmail(String email);
-
+    Autenticacion findByEmail(String email);
 }

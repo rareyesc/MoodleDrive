@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var registroExitoso = document.getElementById('registroExitoso').value;
     var usuarioExistente = document.getElementById('usuarioExistente').value;
 
-    if (errorDocumento === 'true') {
+    if (errorDocumento == 'true') {
         $('#campoVacioModal').modal('show');
     }
 
-    if (errorNumeroInvalido === 'true') {
+    if (errorNumeroInvalido == 'true') {
         $('#numeroInvalidoModal').modal('show');
     }
 
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (usuarioExistente == 'true') {
-            $('#contraseniaInvalida').modal('show');
-        }
+        $('#contraseniaInvalida').modal('show');
+    }
 
     if (registroExitoso == 'true') {
         $('#usuarioRegistradoModal').modal('show');
