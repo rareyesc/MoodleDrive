@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" th:href="@{/css/estilosForm.css}"/>
+    <link rel="stylesheet" th:href="@{/css/all.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/sb-admin-2.min.css}"/>
     <link rel="icon" th:href="@{/images/Icono_SM.ico}" type="image/x-icon">
 </head>
 
@@ -49,7 +51,7 @@
                                 <!-- CONTENEDOR DE TIPO DE DOCUMENTO -->
                                 <div class="col-sm-6">
                                     <!-- SELECT DE TIPO DE DOCUMENTO -->
-                                    <select class="form-select rounded-select" id="txtTDoc" name="tDocumento" required>
+                                    <select class="custom-select rounded-pill" id="txtTDoc" name="tDocumento" required>
                                         <option value="-1" disabled selected>Tipo Documento... *</option>
                                         <option th:each="doc : ${tiposDocumento}" th:value="${doc.idtDocumento}" th:text="${doc.nombre}"></option>
                                     </select>
@@ -106,7 +108,7 @@
                                 <!-- CONTENEDOR DE DIA DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE DIA DE NACIMIENTO -->
-                                    <select class="form-select" id="txtDia" name="dNacimiento" required>
+                                    <select class="custom-select rounded-pill" id="txtDia" name="dNacimiento" required>
                                         <option value="dia" disabled selected>D&iacute;a Nacim... *</option>
                                         <option th:each="dia : ${#numbers.sequence(1, 31)}" th:value="${dia}" th:text="${dia}"></option>
                                     </select>
@@ -116,7 +118,7 @@
                                 <!-- CONTENEDOR MES DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE MES DE NACIMIENTO -->
-                                    <select class="form-select" id="txtMes" name="mNacimiento" required>
+                                    <select class="custom-select rounded-pill" id="txtMes" name="mNacimiento" required>
                                         <option value="mes" disabled selected>Mes Nacim... *</option>
                                         <option th:each="mes : ${#numbers.sequence(1, 12)}" th:value="${mes}" th:text="${mes}"></option>
                                     </select>
@@ -126,7 +128,7 @@
                                 <!-- CONTENEDOR ANIO DE NACIMIENTO -->
                                 <div class="col-sm-4">
                                     <!-- SELECT DE ANIO DE NACIMIENTO -->
-                                    <select class="form-select" id="txtAnio" name="aNacimiento" required>
+                                    <select class="custom-select rounded-pill" id="txtAnio" name="aNacimiento" required>
                                         <option value="anio" disabled selected>A&ntilde;o Nacim... *</option>
                                         <option th:each="anio : ${#numbers.sequence(1950, anioFinal)}" th:value="${anio}" th:text="${anio}"></option>
                                     </select>
