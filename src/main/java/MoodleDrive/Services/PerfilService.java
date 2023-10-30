@@ -2,6 +2,7 @@ package MoodleDrive.Services;
 
 import MoodleDrive.Models.Perfil;
 import MoodleDrive.DTO.RegistroDTO;
+import MoodleDrive.Repositories.AutenticacionRepository;
 import org.apache.logging.log4j.Logger;
 import MoodleDrive.Models.Autenticacion;
 import org.apache.logging.log4j.LogManager;
@@ -9,14 +10,19 @@ import org.springframework.stereotype.Service;
 import MoodleDrive.Repositories.PerfilRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Optional;
+
 @Service
 public class PerfilService {
     private static final Logger logger = LogManager.getLogger(AutenticacionService.class);
     @Autowired
     private final PerfilRepository perfilRepository;
     @Autowired
-    public PerfilService(PerfilRepository perfilRepository) {
+    private final AutenticacionRepository autenticacionRepository;
+    @Autowired
+    public PerfilService(PerfilRepository perfilRepository, AutenticacionRepository autenticacionRepository) {
         this.perfilRepository = perfilRepository;
+        this.autenticacionRepository = autenticacionRepository;
     }
     public void save(Perfil perfil) {
         perfilRepository.save(perfil);
@@ -37,5 +43,12 @@ public class PerfilService {
         perfil.setaNacimiento(registroDTO.getaNacimiento());
         logger.info("Perfil creado para : " + errorService.formatName(registroDTO.getpNombre()) + " " + errorService.formatName(registroDTO.getpApellido()));
         return perfil;
+    }
+    public Optional<Perfil> obtenerPerfilPorEmail(String email) {
+        Autenticacion autenticacion = autenticacionRepository.findByEmail(email);
+        if (autenticacion != null) {
+            return perfilRepository.findByAuthId(autenticacion.getIdAuth());
+        }
+        return Optional.empty();
     }
 }

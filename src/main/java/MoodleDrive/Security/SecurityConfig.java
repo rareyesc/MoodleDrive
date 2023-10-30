@@ -33,6 +33,7 @@ public class SecurityConfig {
                         .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/registrar/**").permitAll()
+                        .requestMatchers("/forgot/**").permitAll()
                         .requestMatchers("/mainA/**").hasRole("ADMIN")
                         .requestMatchers("/mainS/**").hasRole("ESTUDIANTE")
                         .requestMatchers("/mainP/**").hasRole("PROFESOR")
