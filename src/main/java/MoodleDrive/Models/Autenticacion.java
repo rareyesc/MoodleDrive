@@ -2,6 +2,8 @@ package MoodleDrive.Models;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,6 +35,12 @@ public class Autenticacion {
 
     @Column(name = "fecha_registro", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime fechaRegistro;
+
+    @Column(name = "fecha_ultima_conexion")
+    private LocalDateTime fechaUltimaConexion;
+
+    @OneToMany(mappedBy = "autenticacion", fetch = FetchType.EAGER)
+    private List<AsignaRol> asignaRoles;
 
     /**
      * Constructor predeterminado que inicializa un objeto Autenticacion sin valores específicos.
@@ -156,5 +164,27 @@ public class Autenticacion {
      */
     public void setFechaRegistro(LocalDateTime fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
+    }
+
+    /**
+     * @return La fecha de ultima conexion.
+     */
+    public LocalDateTime getFechaUltimaConexion() {
+        return fechaUltimaConexion;
+    }
+
+    /**
+     * @param fechaUltimaConexion La fecha de ultima conexion.
+     */
+    public void setFechaUltimaConexion(LocalDateTime fechaUltimaConexion) {
+        this.fechaUltimaConexion = fechaUltimaConexion;
+    }
+
+    public List<AsignaRol> getAsignaRoles() {
+        return asignaRoles;
+    }
+
+    public void setAsignaRoles(List<AsignaRol> asignaRoles) {
+        this.asignaRoles = asignaRoles;
     }
 }

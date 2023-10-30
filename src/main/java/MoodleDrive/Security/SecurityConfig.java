@@ -20,6 +20,8 @@ public class SecurityConfig {
     private CustomAuthenticationFailureHandler customAuthenticationFailureHandler;
     @Autowired
     private CustomAuthenticationProvider customAuthenticationProvider;
+    @Autowired
+    private CustomAuthenticationSuccessHandler customAuthenticationSuccessHandler;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -31,14 +33,17 @@ public class SecurityConfig {
                         .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/registrar/**").permitAll()
-                        .requestMatchers("/mainS/**").permitAll()
+                        .requestMatchers("/mainA/**").hasRole("ADMIN")
+                        .requestMatchers("/mainS/**").hasRole("ESTUDIANTE")
+                        .requestMatchers("/mainP/**").hasRole("PROFESOR")
+                        .requestMatchers("/mainI/**").hasRole("INVITADO")
                         .anyRequest().authenticated()
                 )
                 // Configuración del login
                 .formLogin(formLogin -> formLogin
                         .usernameParameter("email")
                         .loginPage("/login/user")
-                        .defaultSuccessUrl("/mainS/student")
+                        .successHandler(customAuthenticationSuccessHandler)
                         .failureHandler(customAuthenticationFailureHandler)
                         .permitAll()
                 )

@@ -35,6 +35,8 @@ public class ServletRegistrar {
     private AsignaRolRepository asignaRolRepository;
     @Autowired
     private ErrorService errorService;
+    @Autowired
+    private EmailService emailService;
     // Método que maneja las solicitudes GET a la ruta "/formulario" relativa a la ruta base del controlador.
     @GetMapping("/formulario")
     public String mostrarFormularioRegistro(@NotNull Model model) {
@@ -89,6 +91,8 @@ public class ServletRegistrar {
         asignaRolRepository.save(asignaRol);
         // Añade un atributo flash para indicar que el registro fue exitoso.
         redirectAttributes.addFlashAttribute("registroExitoso", true);
+        // Enviar correo electrónico de bienvenida
+        emailService.sendWelcomeEmail(autenticacion.getEmail(), perfil.getpNombre(), perfil.getpApellido());
         // Redirecciona al usuario de vuelta al formulario de registro.
         return "redirect:/registrar/formulario";
     }

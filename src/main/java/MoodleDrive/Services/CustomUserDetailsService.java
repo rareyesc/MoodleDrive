@@ -1,7 +1,12 @@
 package MoodleDrive.Services;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import MoodleDrive.Models.AsignaRol;
 import MoodleDrive.Models.Autenticacion;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 import MoodleDrive.Security.DisabledUserException;
 import MoodleDrive.Repositories.AutenticacionRepository;
@@ -24,9 +29,14 @@ public class CustomUserDetailsService implements UserDetailsService {
         if (autenticacion.getEstado() == 0) {
             throw new DisabledUserException("El usuario está deshabilitado");
         }
+        List<AsignaRol> asignaRoles = autenticacion.getAsignaRoles();
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        for (AsignaRol asignaRol : asignaRoles) {
+            authorities.add(new SimpleGrantedAuthority("ROLE_" + asignaRol.getRol().getNombreRol().toUpperCase()));
+        }
         return User.withUsername(autenticacion.getEmail())
                 .password(autenticacion.getPass())
-                .authorities(new ArrayList<>())
+                .authorities(authorities)
                 .build();
     }
 }
