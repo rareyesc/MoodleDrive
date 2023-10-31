@@ -34,6 +34,7 @@ public class SecurityConfig {
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/registrar/**").permitAll()
                         .requestMatchers("/forgot/**").permitAll()
+                        .requestMatchers("/change/**").permitAll()
                         .requestMatchers("/mainA/**").hasRole("ADMIN")
                         .requestMatchers("/mainS/**").hasRole("ESTUDIANTE")
                         .requestMatchers("/mainP/**").hasRole("PROFESOR")

@@ -1,4 +1,4 @@
-package MoodleDrive.Services;
+package MoodleDrive.Repositories.Services;
 
 import MoodleDrive.Models.Rol;
 import MoodleDrive.DTO.RegistroDTO;

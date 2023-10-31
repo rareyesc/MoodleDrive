@@ -4,10 +4,10 @@ import org.springframework.ui.Model;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.apache.logging.log4j.LogManager;
-import MoodleDrive.Services.ErrorLoginService;
+import MoodleDrive.Repositories.Services.ErrorLoginService;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
-import MoodleDrive.Services.AutenticacionService;
+import MoodleDrive.Repositories.Services.AutenticacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 // Anotación @Controller que indica a Spring que esta clase es un controlador.

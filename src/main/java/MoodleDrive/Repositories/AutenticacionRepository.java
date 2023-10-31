@@ -1,6 +1,8 @@
 package MoodleDrive.Repositories;
 
 import java.time.LocalDateTime;
+import java.util.Optional;
+
 import MoodleDrive.Models.Autenticacion;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Repository;
@@ -17,4 +19,6 @@ public interface AutenticacionRepository extends JpaRepository<Autenticacion, In
     @Modifying
     @Query("update Autenticacion a set a.fechaUltimaConexion = :fechaUltimaConexion where a.email = :email")
     void updateUltimaConexion(@Param("email") String email, @Param("fechaUltimaConexion") LocalDateTime fechaUltimaConexion);
+
+    Optional<Autenticacion> findByTokenRecuperacion(String tokenRecuperacion);
 }

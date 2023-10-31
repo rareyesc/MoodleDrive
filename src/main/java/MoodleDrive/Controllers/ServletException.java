@@ -1,6 +1,6 @@
 package MoodleDrive.Controllers;
 
-import MoodleDrive.Services.ErrorService;
+import MoodleDrive.Repositories.Services.ErrorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.beans.factory.annotation.Autowired;

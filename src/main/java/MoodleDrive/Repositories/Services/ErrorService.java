@@ -1,4 +1,4 @@
-package MoodleDrive.Services;
+package MoodleDrive.Repositories.Services;
 
 import java.util.*;
 import MoodleDrive.DTO.RegistroDTO;
@@ -103,5 +103,15 @@ public class ErrorService {
     }
     public boolean cedulaYaRegistrada(String nDocumento) {
         return perfilRepository.existsBynDocumento(nDocumento);
+    }
+    public List<String> validatePasswordChange(String newPassword, String confirmPassword) {
+        List<String> errors = new ArrayList<>();
+        if (!validarContrasenia(newPassword)) {
+            errors.add("La contrasena no cumple con los requisitos mínimos de seguridad.");
+        }
+        if (!validarContraseniasIguales(newPassword, confirmPassword)) {
+            errors.add("Las contraseñas no coinciden.");
+        }
+        return errors;
     }
 }

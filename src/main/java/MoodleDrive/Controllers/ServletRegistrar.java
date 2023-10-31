@@ -3,7 +3,7 @@ package MoodleDrive.Controllers;
 import java.util.List;
 import java.time.LocalDate;
 import MoodleDrive.Models.*;
-import MoodleDrive.Services.*;
+import MoodleDrive.Repositories.Services.*;
 import jakarta.validation.Valid;
 import MoodleDrive.DTO.RegistroDTO;
 import org.springframework.ui.Model;

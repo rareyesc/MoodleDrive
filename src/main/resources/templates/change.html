@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <title>Recuperar Contraseña</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
     <link rel="stylesheet" th:href="@{/css/all.min.css}"/>
@@ -16,41 +20,56 @@
     <link rel="stylesheet" th:href="@{/css/sb-admin-2.min.css}"/>
     <link rel="icon" th:href="@{/images/Icono_SM.ico}" type="image/x-icon">
 </head>
+
 <body class="bg-gradient-primary">
+
 <div class="container">
+
     <!-- Outer Row -->
     <div class="row justify-content-center">
+
         <div class="col-xl-10 col-lg-12 col-md-9">
+
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
                     <div class="row">
                         <div class="col-lg-6 d-none d-lg-block bg-password-image"></div>
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-2">¿Olvidaste tu Contraseña?</h1>
-                                    <p class="mb-4">Lo entendemos, estas cosas pasan. Solo debes introducir
-                                        tu dirección de correo electrónico a continuación y te enviaremos un enlace
-                                        para reestablecer tu Contraseña
-                                    </p>
+                                    <h1 class="h4 text-gray-900 mb-2">Cambiar Contrase&ntilde;a</h1>
                                 </div>
-                                <form class="user" th:action="@{/forgot/password}" method="POST">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control form-control-user"
-                                               id="email" name="email" aria-describedby="emailHelp"
-                                               placeholder="Ingresa Correo Electronico...">
+                                <form class="user" id="changePassForm" th:action="@{/change/password}" method="POST">
+                                    <div class="col-sm-12 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user" id="txtPass"
+                                               placeholder="Contrase&ntilde;a *" name="txtPass"/>
                                     </div>
+                                    <br>
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control form-control-user" id="txtRePass"
+                                               placeholder="Repetir Contrase&ntilde;a *" name="txtRePass"/>
+                                    </div>
+                                    <hr>
+                                    <input type="hidden" name="token" th:value="${token}"/>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">
                                         Restaurar Contraseña
                                     </button>
+                                    <hr>
+                                    <div class="text-muted">
+                                        <small>
+                                            Condiciones para la contraseña:
+                                            <ul>
+                                                <li>Más de 8 caracteres</li>
+                                                <li>Al menos un número</li>
+                                                <li>Al menos una mayúscula</li>
+                                                <li>Al menos una minúscula</li>
+                                                <li>Al menos un carácter especial (ej: !@#$%^&*)</li>
+                                            </ul>
+                                        </small>
+                                    </div>
                                 </form>
                                 <hr>
-                                <div class="text-center">
-                                    <a class="small" th:href="@{/registrar/formulario}">¿Crea una Cuenta?</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" th:href="@{/login/user}">¿Ya tienes una cuenta?, ¿Accede?</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,29 +78,28 @@
         </div>
     </div>
 </div>
-
-<!-- INPUT OCULTO ALMACENA USUARIO NO EXISTENTE -->
-<input type="hidden" id="emailNoExiste" th:value="${emailNoExiste}">
-<!-- INPUT OCULTO ALMACENA USUARIO NO EXISTENTE -->
-<!-- MODAL FADE USUARIO NO EXISTENTE -->
-<div class="modal fade" id="modalEmailNoExiste" tabindex="-1" role="dialog"
+<!-- INPUT OCULTO ALMACENA -->
+<input type="hidden" id="passwordChanged" th:value="${passwordChanged}">
+<!-- INPUT OCULTO ALMACENA -->
+<!-- MODAL FADE -->
+<div class="modal fade" id="modalPasswordChanged" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- MODAL DIALOG USUARIO NO EXISTENTE -->
+    <!-- MODAL DIALOG -->
     <div class="modal-dialog" role="document">
-        <!-- MODAL CONTENT USUARIO NO EXISTENTE -->
+        <!-- MODAL CONTENT -->
         <div class="modal-content">
-            <!-- MODAL HEADER USUARIO NO EXISTENTE -->
+            <!-- MODAL HEADER -->
             <div class="modal-header">
                 <!-- TITULO DEL HEADER -->
-                <h5 class="modal-title" id="exampleModalLabel">Error al enviar Correo Electr&oacute;nico</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Cambio Contrase&ntilde;a Exitoso</h5>
                 <!-- FIN TITULO DEL HEADER -->
                 <!-- BOTON PARA CERRAR EL MODAL -->
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button class="btn-success" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                 <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
-            <!-- FIN MODAL HEADER USUARIO NO EXISTENTE -->
+            <!-- FIN MODAL HEADER -->
             <!-- CUERPO DEL MODAL -->
-            <div class="modal-body">Usuario no incorrecto.</div>
+            <div class="modal-body">Has cambiado tu contraseña exitosamente.</div>
             <!-- FIN CUERPO DEL MODAL -->
             <!-- FOOTER DEL MODAL -->
             <div class="modal-footer">
@@ -91,56 +109,56 @@
             </div>
             <!-- FIN FOOTER DEL MODAL -->
         </div>
-        <!-- MODAL CONTENT USUARIO NO EXISTENTE -->
+        <!-- MODAL CONTENT -->
     </div>
-    <!-- FIN MODAL DIALOG USUARIO NO EXISTENTE -->
+    <!-- FIN MODAL DIALOG -->
 </div>
-<!-- FIN MODAL FADE USUARIO NO EXISTENTE -->
-
-<!-- INPUT OCULTO ALMACENA CORREO EXITOSO -->
-<input type="hidden" id="envioCorreo" th:value="${envioCorreo}">
-<!-- INPUT OCULTO ALMACENA CORREO EXITOSO -->
-<!-- MODAL FADE CORREO EXITOSO -->
-<div class="modal fade" id="modalEnvioCorreo" tabindex="-1" role="dialog"
+<!-- FIN MODAL FADE -->
+<!-- MODAL FADE -->
+<div class="modal fade" id="modalPasswordNoChanged" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <!-- MODAL DIALOG CORREO EXITOSO -->
+    <!-- MODAL DIALOG -->
     <div class="modal-dialog" role="document">
-        <!-- MODAL CONTENT CORREO EXITOSO -->
+        <!-- MODAL CONTENT -->
         <div class="modal-content">
-            <!-- MODAL HEADER CORREO EXITOSO-->
+            <!-- MODAL HEADER -->
             <div class="modal-header">
                 <!-- TITULO DEL HEADER -->
-                <h5 class="modal-title" id="exampleModalLabel">Correo enviado</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Cambio Contrase&ntilde;a Erroneo</h5>
                 <!-- FIN TITULO DEL HEADER -->
                 <!-- BOTON PARA CERRAR EL MODAL -->
                 <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                 <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
-            <!-- FIN MODAL HEADER CORREO EXITOSO -->
+            <!-- FIN MODAL HEADER -->
             <!-- CUERPO DEL MODAL -->
-            <div class="modal-body">Correo enviado exitosamente, valida tu bandeja de entrada.</div>
+            <div class="modal-body">Error al cambiar la contrase&ntilde;a.</div>
             <!-- FIN CUERPO DEL MODAL -->
             <!-- FOOTER DEL MODAL -->
             <div class="modal-footer">
                 <!-- BOTON PARA CERRAR EL MODAL -->
-                <button class="btn btn-success" type="button" data-bs-dismiss="modal">Cerrar</button>
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cerrar</button>
                 <!-- FIN BOTON PARA CERRAR EL MODAL -->
             </div>
             <!-- FIN FOOTER DEL MODAL -->
         </div>
-        <!-- MODAL CONTENT CORREO EXITOSO -->
+        <!-- MODAL CONTENT -->
     </div>
-    <!-- FIN MODAL DIALOG CORREO EXITOSO -->
+    <!-- FIN MODAL DIALOG -->
 </div>
-<!-- FIN MODAL FADE CORREO EXITOSO -->
+<!-- FIN MODAL FADE -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script th:src="@{/js/jquery.min.js}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 <script th:src="@{/js/jquery.easing.min.js}"></script>
 <script th:src="@{/js/sb-admin-2.min.js}"></script>
-<script th:src="@{/js/modalForgot.js}"></script>
+<script th:src="@{/js/changePass.js}"></script>
+<script th:src="@{/js/modalChangePass.js}"></script>
+
 </body>
+
 </html>
