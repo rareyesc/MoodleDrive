@@ -1,13 +1,14 @@
 package MoodleDrive.Controllers;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.ui.Model;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.apache.logging.log4j.LogManager;
-import MoodleDrive.Repositories.Services.ErrorLoginService;
+import MoodleDrive.Services.ErrorLoginService;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
-import MoodleDrive.Repositories.Services.AutenticacionService;
+import MoodleDrive.Services.AutenticacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 // Anotación @Controller que indica a Spring que esta clase es un controlador.
@@ -31,7 +32,7 @@ public class ServletLogin {
     // Método que será invocado cuando se reciba una solicitud GET a la ruta especificada.
     // El parámetro Model es proporcionado por Spring y puede ser usado para pasar datos a la vista.
     @GetMapping("/user")
-    public String mostrarLoginUser(@NotNull Model model) {
+    public String mostrarLoginUser(@NotNull Model model, HttpServletRequest request) {
         // Retorna el nombre de la vista "login", lo que le dice a Spring que renderice la vista "login".
         return "login";
     }

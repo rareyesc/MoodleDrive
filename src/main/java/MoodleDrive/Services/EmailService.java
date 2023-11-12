@@ -1,4 +1,4 @@
-package MoodleDrive.Repositories.Services;
+package MoodleDrive.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;

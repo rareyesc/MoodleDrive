@@ -1,7 +1,7 @@
 package MoodleDrive.Controllers;
 
-import MoodleDrive.Repositories.Services.AutenticacionService;
-import MoodleDrive.Repositories.Services.ErrorService;
+import MoodleDrive.Services.AutenticacionService;
+import MoodleDrive.Services.ErrorService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

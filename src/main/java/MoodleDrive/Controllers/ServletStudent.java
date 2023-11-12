@@ -1,7 +1,7 @@
 package MoodleDrive.Controllers;
 
 import MoodleDrive.Models.Perfil;
-import MoodleDrive.Repositories.Services.PerfilService;
+import MoodleDrive.Services.PerfilService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

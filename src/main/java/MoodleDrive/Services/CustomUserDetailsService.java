@@ -1,4 +1,4 @@
-package MoodleDrive.Repositories.Services;
+package MoodleDrive.Services;
 
 import java.util.ArrayList;
 import java.util.List;

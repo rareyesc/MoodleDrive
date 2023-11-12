@@ -1,4 +1,4 @@
-package MoodleDrive.Repositories.Services;
+package MoodleDrive.Services;
 
 import MoodleDrive.Models.Perfil;
 import MoodleDrive.DTO.RegistroDTO;
@@ -27,8 +27,8 @@ public class PerfilService {
     public void save(Perfil perfil) {
         perfilRepository.save(perfil);
         logger.info("Perfil guardado/actualizado para : " + perfil.getpNombre() + " " +perfil.getpApellido());
-    }
-    public Perfil crearPerfil(RegistroDTO registroDTO, Autenticacion autenticacion) {
+    }    public Perfil crearPerfil(RegistroDTO registroDTO, Autenticacion autenticacion) {
+
         Perfil perfil = new Perfil();
         ErrorService errorService = new ErrorService();
         perfil.setAutenticacion(autenticacion);

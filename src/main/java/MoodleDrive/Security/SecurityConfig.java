@@ -22,6 +22,8 @@ public class SecurityConfig {
     private CustomAuthenticationProvider customAuthenticationProvider;
     @Autowired
     private CustomAuthenticationSuccessHandler customAuthenticationSuccessHandler;
+    @Autowired
+    private CustomLogoutSuccessHandler customLogoutSuccessHandler;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -52,7 +54,7 @@ public class SecurityConfig {
                 // Configuración del logout
                 .logout(logout -> logout
                         .logoutUrl("/logout")
-                        .logoutSuccessUrl("/login?logout")
+                        .logoutSuccessHandler(customLogoutSuccessHandler)
                         .permitAll()
                 );
         return http.build();
