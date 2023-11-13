@@ -11,6 +11,22 @@ import java.util.List;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Autenticacion, Integer> {
 
-    @Query("SELECT new MoodleDrive.DTO.UsuarioDTO(p.autenticacion.idAuth, CONCAT(p.pNombre, ' ', COALESCE(p.sNombre, '')), CONCAT(p.pApellido, ' ', COALESCE(p.sApellido, '')), p.autenticacion.email, td.nombre, p.nDocumento, p.aNacimiento, r.nombreRol, p.autenticacion.estado) FROM Perfil p JOIN p.tDocumento td JOIN p.autenticacion.asignaRoles ar JOIN ar.rol r")
+    @Query("SELECT new MoodleDrive.DTO.UsuarioDTO(" +
+            "p.autenticacion.idAuth, " +
+            "p.pNombre, " +
+            "p.sNombre, " +
+            "p.pApellido, " +
+            "p.sApellido, " +
+            "p.autenticacion.email, " +
+            "td.nombre, " +
+            "p.nDocumento, " +
+            "p.aNacimiento, " +
+            "r.nombreRol, " +
+            "p.autenticacion.estado) " +
+            "FROM Perfil p " +
+            "JOIN p.tDocumento td " +
+            "JOIN p.autenticacion.asignaRoles ar " +
+            "JOIN ar.rol r")
     List<UsuarioDTO> findAllUsuarios();
+
 }

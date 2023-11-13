@@ -85,7 +85,7 @@
 
       <!-- Topbar -->
       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-        PRUEBA 1
+        <h1 class="display-6">Bienvenido Administrador</h1>
         <!-- Sidebar Toggle (Topbar) -->
         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
           <i class="fa fa-bars"></i>
@@ -132,19 +132,22 @@
       <!-- Begin Page Content -->
       <div class="container-fluid">
 
-        <!-- Ejemplo de Tabla Bootstrap -->
+
         <div class="card shadow mb-4">
           <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Usuarios</h6>
           </div>
           <div class="card-body">
             <div class="table-responsive">
+              <!-- Tabla con Boostrap -->
               <table class="table table-bordered" id="userTable" width="100%" cellspacing="0">
                 <thead>
-                <tr>
+                <tr table-secondary>
                   <th>#</th>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
+                  <th>Primer Nombre</th>
+                  <th>Segundo Nombre</th>
+                  <th>Primer Apellido</th>
+                  <th>Segundo Apellido</th>
                   <th>Correo</th>
                   <th>Tipo de Documento</th>
                   <th>N° Documento</th>
@@ -157,22 +160,74 @@
                 <tbody>
                 <tr th:each="usuario : ${usuarios}">
                   <td th:text="${usuario.idAuth}"></td>
-                  <td th:text="${usuario.nombre}"></td>
-                  <td th:text="${usuario.apellido}"></td>
-                  <td th:text="${usuario.email}"></td>
-                  <td th:text="${usuario.tipoDocumento}"></td>
-                  <td th:text="${usuario.nDocumento}"></td>
-                  <td th:text="${usuario.aNacimiento}"></td>
-                  <td th:text="${usuario.nombreRol}"></td>
-                  <td th:text="${usuario.estado == 1 ? 'Activo' : 'Inactivo'}"></td>
+                  <td contenteditable="false" data-field="primerNombre" th:text="${usuario.primerNombre}"></td>
+                  <td contenteditable="false" data-field="segundoNombre" th:text="${usuario.segundoNombre}"></td>
+                  <td contenteditable="false" data-field="primerApellido" th:text="${usuario.primerApellido}"></td>
+                  <td contenteditable="false" data-field="segundoApellido" th:text="${usuario.segundoApellido}"></td>
+                  <td contenteditable="false" data-field="email" th:text="${usuario.email}"></td>
+                  <td contenteditable="false" data-field="tipoDocumento" th:text="${usuario.tipoDocumento}"></td>
+                  <td contenteditable="false" data-field="nDocumento" th:text="${usuario.nDocumento}"></td>
+                  <td contenteditable="false" data-field="aNacimiento" th:text="${usuario.aNacimiento}"></td>
+                  <td contenteditable="false" data-field="nombreRol" th:text="${usuario.nombreRol}"></td>
+                  <td contenteditable="false" data-field="estado" th:text="${usuario.estado == 1 ? 'Activo' : 'Inactivo'}"></td>
                   <td>
-                    <button type="button" class="btn btn-outline-secondary">
+                    <button type="button" class="btn btn-outline-secondary edit-btn">
                       <i class="fas fa-fw fa-pencil-alt"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary save-btn" style="display: none;">
+                      <i class="fas fa-fw fa-save"></i>
                     </button>
                   </td>
                 </tr>
                 </tbody>
               </table>
+
+
+              <script>
+  // Evento de clic para el botón de editar
+  document.querySelectorAll('.edit-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      let row = this.closest('tr');
+      row.querySelectorAll('td[contenteditable]').forEach(td => td.contentEditable = true);
+      this.style.display = 'none';
+      row.querySelector('.save-btn').style.display = 'block';
+    });
+  });
+
+  // Evento de clic para el botón de guardar
+  document.querySelectorAll('.save-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      let row = this.closest('tr');
+      let updatedData = {};
+      row.querySelectorAll('td[contenteditable]').forEach(td => {
+        let field = td.getAttribute('data-field');
+        updatedData[field] = td.textContent;
+        td.contentEditable = false;
+      });
+
+      this.style.display = 'none';
+      row.querySelector('.edit-btn').style.display = 'block';
+
+      // Enviar los datos actualizados al servidor
+      fetch('/ruta-para-actualizar-datos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    });
+  });
+</script>
+
+
             </div>
         </div>
         </div>
