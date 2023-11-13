@@ -5,6 +5,7 @@ import MoodleDrive.DTO.UsuarioDTO;
 import MoodleDrive.Models.Perfil;
 import MoodleDrive.Repositories.UsuarioRepository;
 import MoodleDrive.Services.PerfilService;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,15 +26,15 @@ import java.util.Optional;
 @RequestMapping("/mainA")
 public class ServletAdmin {
     private static final Logger logger = LogManager.getLogger(ServletAdmin.class);
-
     @Autowired
     private PerfilService perfilService;
-
     @Autowired
     private UsuarioRepository usuarioRepository;
-
     @GetMapping("/admin")
-    public String mostrarVistaAdmin(@ModelAttribute("UsuarioDTO") @Valid UsuarioDTO usuarioDTO, @NotNull Model model, @AuthenticationPrincipal UserDetails userDetails) {
+    public String mostrarVistaAdmin(@ModelAttribute("UsuarioDTO") @Valid UsuarioDTO usuarioDTO, @NotNull Model model, @AuthenticationPrincipal UserDetails userDetails, HttpServletResponse response) {
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Pragma", "no-cache");
+        response.setDateHeader("Expires", 0);
         if (userDetails != null) {
             String email = userDetails.getUsername();  // Asumiendo que el email es el username en UserDetails
             Optional<Perfil> perfilOptional = perfilService.obtenerPerfilPorEmail(email);
@@ -43,14 +44,9 @@ public class ServletAdmin {
                 logger.info("Primer Apellido: " + perfil.getpApellido());
                 model.addAttribute("primerNombre", perfil.getpNombre());
                 model.addAttribute("primerApellido", perfil.getpApellido());
-
                 //Datos para listas los usuarios
                 List<UsuarioDTO> usuarios = usuarioRepository.findAllUsuarios();
-                logger.info("UsuariosDTO: " + usuarios);
                 model.addAttribute("usuarios", usuarios);
-
-
-
             } else {
                 logger.warn("No se encontró el perfil para el usuario: " + userDetails.getUsername());
             }
