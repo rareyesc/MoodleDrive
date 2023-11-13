@@ -95,5 +95,5 @@ public class ServletRegistrar {
         emailService.sendWelcomeEmail(autenticacion.getEmail(), perfil.getpNombre(), perfil.getpApellido());
         // Redirecciona al usuario de vuelta al formulario de registro.
         return "redirect:/registrar/formulario";
-    }
+        }
 }
